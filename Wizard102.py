@@ -149,10 +149,12 @@ while (done):
         enemy = enemy -110
         print ("You have delt 110 dam to the enemy. Enemy health =")
         print enemy
-    else:
-        enemy = enemy -100
+    elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+        enemy = enemy - 100
         print ("You have delt 100 dam to the enemy. Enemy health =")
         print enemy
+    else:
+        print("You mistyped and your spell fizzled")
     time.sleep(3)
     print("Malistaire's minion is starting his turn")
     time.sleep(3)
@@ -199,10 +201,12 @@ while (done):
         enemy = enemy -110
         print ("You have delt 110 dam to the enemy. Enemy health =")
         print enemy
-    else:
-        enemy = enemy -100
+    elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+        enemy = enemy - 100
         print ("You have delt 100 dam to the enemy. Enemy health =")
         print enemy
+    else:
+        print("You mistyped and your spell fizzled")
     time.sleep(3)
     print("Malistaire's minion is starting it's turn")
     time.sleep(2)
@@ -247,10 +251,12 @@ while (done):
         enemy = enemy -110
         print ("You have delt 110 dam to the enemy. Enemy health =")
         print enemy
-    else:
-        enemy = enemy -100
+    elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+        enemy = enemy - 100
         print ("You have delt 100 dam to the enemy. Enemy health =")
         print enemy
+    else:
+        print("You mistyped and your spell fizzled")
     if enemy <= 0:
         print("You win!")
         done= False
@@ -302,10 +308,12 @@ while (done):
             enemy = enemy -110
             print ("You have delt 110 dam to the enemy. Enemy health =")
             print enemy
-        else:
-            enemy = enemy -100
+        elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+            enemy = enemy - 100
             print ("You have delt 100 dam to the enemy. Enemy health =")
             print enemy
+        else:
+            print("You mistyped and your spell fizzled")
         if enemy <= 0:
             print("You win!")
             done= False
@@ -357,10 +365,12 @@ while (done):
                 enemy = enemy -110
                 print ("You have delt 110 dam to the enemy. Enemy health =")
                 print enemy
-            else:
-                enemy = enemy -100
+            elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                enemy = enemy - 100
                 print ("You have delt 100 dam to the enemy. Enemy health =")
                 print enemy
+            else:
+                print("You mistyped and your spell fizzled")
             if enemy <= 0:
                 time.sleep(4)
                 print("You win!")
@@ -1442,8 +1452,11 @@ while (done2):
                                         break
 done3= True
 while (done3):
-    print("You have received a Sturdy Helm for defeating a lost soul, it will give you + 75 health")
+    print("You have received a Sturdy Helm for defeating a lost soul, it will give you + 75 max health")
     time.sleep(5)
+    print("your health has been returned to MAX")
+    time.sleep(3.2)
+    character = 600                                                                                                                #change this number to whatever the health was before the last battle, i think it was 600
     sturdy_helm = 75
     character = character + sturdy_helm
     print("Your character now has" + character + "health")
@@ -1454,7 +1467,7 @@ while (done3):
     time.sleep(5)
     print("Lad Oriel says" + person + "I need you to search three bone cages along the alley, I believe that they have something to do with the brainwashings.")
     time.sleep(9)
-    print("You walk along the ally and search the cages, looking for clues")
+    print("You walk along the alley and search the cages, looking for clues")
     time.sleep(4)
     print("In one of the cages you find a gold coin and and an enchanted piece of paper. You pick them up.")
     time.sleep(5)
@@ -1463,10 +1476,12 @@ while (done3):
     print("Lady Oriel tells you that the coin is worth one hundred dollars in the market, and she says that paper can be made into a healing spell")
     time.sleep(9)
     money = 100
-    print("She takes the paper and performs a deed")
+    print("She takes the paper and performs some magic")
     time.sleep(3)
     print("Lady Oriel hands you the spell, it is a pixie, which will heal you for 400 health")
     time.sleep(4.5)
+    print("For your good work, Lady Oriel advises you to visit the shop")
+    time.sleep(4)
     print("You leave the Hedge Maze")
     time.sleep(3)
     shop = raw_input("Would u like to travel to the shop(yes or no)")
@@ -1522,3 +1537,40 @@ while (done3):
     else:
         print("You have typed inccorectly, and will not get to use the shop this time")
         print("Continuing journey")
+    print("You return to the Hedge Maze")
+    time.sleep(3)
+    print("Lady Oriel says" + person + ", according to your evidence, it appears that farther up the alley there is a powerful wizard who is conjouring this magic. Defeat him and the pixies will be free")
+    time.sleep(12)
+    print("I will leave you with a new spell to defeat such an enemy")
+    time.sleep(3)
+    if wizard== "Fire" or wizard== "fire":
+        print("Lady Oriel has rewarded you with a Sun Bird!")
+    elif wizard== "Ice" or wizard== "ice":
+        print("Lady Oriel has rewarded you with a Evil Snowman!")
+    elif wizard== "Life" or wizard== "life":
+        print("Lady Oriel has reward you with a Seraph!")
+    elif wizard== "Death" or wizard== "death":
+        print("Lady Oriel has rewarded you with a Banshee")
+    elif wizard== "Myth" or wizard== "myth":
+        print("Lady Oriel has rewarded you with a Cyclops")
+    elif wizard== "Storm" or wizard== "storm":
+        print("Lady Oriel has rewarded you with a Storm Shark")
+    elif wizard== "Balance" or wizard== "balance":
+        print("Lady Oriel has rewarded you a Sandstorm")
+    else:
+        print("You picked an invalid class please restart your game")
+    time.sleep(4)
+    print("You make your way up the alley alone in search of this powerfull wizard. You search with the intent to kill")
+    time.sleep(5)
+    print("As you are walking down the alley, everything seems to get darker and darker")
+    time.sleep(4.2)
+    print("There is a dark presence amitst")
+    time.sleep(3)
+    print("Sudenly, when everything was almost pitch black, the only thing you could make out was a __________ conjouring dark magic") #idk what the enemy is ur gonna have to put that in ry guy
+    time.sleep(5.3)
+    print("This must be the one Lady Oriel was talking about")
+    time.sleep(3.4)
+    print("I must stop him!")
+    time.sleep(2)
+    print("Your turn has started")
+    enemy = 750 #dont put in character health cuz it was already defined
