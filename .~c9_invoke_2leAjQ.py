@@ -898,7 +898,7 @@ while (done2):
         enemy = enemy - 200
         print("You have delt 200 dam to the enemy. Enemy health =")
         print enemy
-    elif spell== ("ghoul"):
+    print("Lost Soul uses ghoul and deals 16 dam.")
         enemy = enemy -160
         character = character + 80
         print("You have delt 160 dam the enemy and restored 80 health to your self.")
@@ -998,7 +998,7 @@ while (done2):
                 character = character -80
                 print("Your health=")
                 print character
-                spell= raw_input("Enter your spell (please use only lowercase):")
+                 spell= raw_input("Enter your spell (please use only lowercase):")
             if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
                 enemy = enemy - 60
                 print ("You have delt 60 dam to the enemy. Enemy health =")
@@ -1041,7 +1041,7 @@ while (done2):
                 enemy = enemy -100
                 print ("You have delt 100 dam to the enemy. Enemy health =")
                 print enemy
-            if character <= 0:
+            if charecter <= 0:
                 print("You have died! Please restart the game and try again")
                 done= False
                 break
@@ -1049,61 +1049,4 @@ while (done2):
                 print("You win!")
                 done= False
                 break
-            else:
-                print("Lost soul is starting their turn")
-                print("Lost Soul uses dark blast and deals 80 dam.")
-                character = character -80
-                print("Your health=")
-                print character
-                spell= raw_input("Enter your spell (please use only lowercase):")
-            if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                enemy = enemy - 60
-                print ("You have delt 60 dam to the enemy. Enemy health =")
-                print enemy
-            elif spell== "storm snake":
-                enemy = enemy -130
-                print ("You have delt 130 dam to the enemy. Enemy health =")
-                print enemy
-            elif spell== "fire cat": 
-                enemy = enemy -120
-                print ("You have delt 120 dam to the enemy. Enemy health =")
-                print enemy
-            elif spell== "blood bat":
-                enemy = enemy -110
-                print ("You have delt 110 dam to the enemy. Enemy health =")
-                print enemy
-            elif spell== "fire elf":
-                enemy = enemy- 220
-                print("You have delt 220 dam to the enemy. Enemy helath =")
-                print enemy
-            elif spell== ("lightning bat"):
-                enemy = enemy -240
-                print("You have delt 240 dam to the enemy. Enemy health =")
-                print enemy
-            elif spell== ("troll"):
-                enemy = enemy - 200
-                print("You have delt 200 dam to the enemy. Enemy health =")
-                print enemy
-            elif spell== ("ghoul"):
-                enemy = enemy -160
-                character = character + 80
-                print("You have delt 160 dam the enemy and restored 80 health to your self.")
-                print("Enemy health = " + enemy)
-                print("Your health = " + character)
-            elif spell== ("snow serpent") or spell== ("leprachaun") or spell== ("scorpion"):
-                enemy = enemy -190
-                print("You have del 190 dam to the enemy. Enemy health =")
-                print enemy
-            else:
-                enemy = enemy -100
-                print ("You have delt 100 dam to the enemy. Enemy health =")
-                print enemy
-            if character <= 0:
-                print("You have died! Please restart the game and try again")
-                done= False
-                break
-            elif enemy <= 0:
-                print("You win!")
-                done= False
-                break
-            else:
+            else: 

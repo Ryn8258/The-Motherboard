@@ -657,7 +657,7 @@ while (done):
                                         print("You have balance beam, and scarab in your spell deck")
                                     else:
                                         print("Because you picked an invalid class you cannot continue the game, please reload the page")
-                                    time.sleep(3)
+                                    time.sleep()
                                     spell= raw_input("Enter your spell (please use only lowercase):")
                                     time.sleep(2)
                                     if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
@@ -1098,12 +1098,7 @@ while (done2):
                 enemy = enemy -100
                 print ("You have delt 100 dam to the enemy. Enemy health =")
                 print enemy
-            if character <= 0:
+            if charecter <= 0:
                 print("You have died! Please restart the game and try again")
                 done= False
                 break
-            elif enemy <= 0:
-                print("You win!")
-                done= False
-                break
-            else:

@@ -689,7 +689,7 @@ while (done):
                                         time.sleep(2)
                                         print("Malistaire uses dark pixie and deals 100 dam.")
                                         character = character - 100
-                                        time.sleep(3)
+                                        time.sleep()
                                         print("Your health=")
                                         print character
                                         time.sleep(3)
@@ -1098,12 +1098,7 @@ while (done2):
                 enemy = enemy -100
                 print ("You have delt 100 dam to the enemy. Enemy health =")
                 print enemy
-            if character <= 0:
+            if charecter <= 0:
                 print("You have died! Please restart the game and try again")
                 done= False
                 break
-            elif enemy <= 0:
-                print("You win!")
-                done= False
-                break
-            else:
