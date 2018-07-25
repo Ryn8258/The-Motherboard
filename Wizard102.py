@@ -1484,7 +1484,7 @@ while (done3):
             time.sleep(4)
             print("You have" + money + "dollars remaining")
             time.sleep(3)
-        elif item== ("Stury Chestplate"):
+        elif item== ("Sturdy Chestplate"):
             money = money - 100
             character = character + 100
             print ("You have bought Sturdy Chestplate for $100")
@@ -1516,11 +1516,6 @@ while (done3):
             time.sleep(3)
         print("Continuing journey...")
         time.sleep(2)
-    elif shop== ("fuck you") or shop== ("fuck off") or shop== ("fuck") or shop== ("shit") or shop== ("cuck"):
-        print("This wizarding world is a family friendly world... please restart the game and rethink your actions")
-    elif shop== ("no, shops are for losers"):
-        print("you are a god, you now have 999 health")
-        character = 9999
     elif shop== ("no") or shop== ("n") or shop== ("No"):
         print("Continuing journey...")
         time.sleep(3)
