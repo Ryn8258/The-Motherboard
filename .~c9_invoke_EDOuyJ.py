@@ -40,6 +40,7 @@ while (done):
     time.sleep(4.2)
     print("A tall, cloaked, death wizared apears with a staff in hand")
     time.sleep(4)
+    
     print("I")
     time.sleep(1.2)
     print("AM")
@@ -52,7 +53,7 @@ while (done):
     time.sleep(2)
     print("Very")
     time.sleep(1.4)
-    print("Very")
+    time.sleep(0.)
     time.sleep(1.6)
     print("Evil")
     time.sleep(2)

@@ -8,13 +8,10 @@ if charecter <= 0:
     print("You have died! Please restart the game and try again")
     done= False
     break
-else:  
-    continue
-
-
-
-if enemy <= 0:
+elif enemy <= 0:
     print("You win!")
-    continue
+    done= False
+    break
 else:
+    continue
     

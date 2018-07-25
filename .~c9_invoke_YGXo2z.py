@@ -37,9 +37,10 @@ while (done):
     print("The sky darkens and a rumbling sound echoes through the air and a ball of fire crashes down from the clouds. It lands in an astronomy tower. Through the window a dark figure can be seen walking in the tower")
     time.sleep(8)
     print("You and Ambrose walk to the tower and reach the top landing")
-    time.sleep(4.2)
+    time.sleep(2.1)
     print("A tall, cloaked, death wizared apears with a staff in hand")
     time.sleep(4)
+    
     print("I")
     time.sleep(1.2)
     print("AM")
