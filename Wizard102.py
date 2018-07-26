@@ -388,80 +388,22 @@ while (done):
                 time.sleep(3)
                 print "You are starting your turn"
                 time.sleep(2)
-            if wizard== "Fire" or wizard== "fire":
-                print("You have flame spark, and fire cat in your spell deck")
-            elif wizard== "Ice" or wizard== "ice":
-                print("You have ice shard, and frost beetle in your spell deck")
-            elif wizard== "Life" or wizard== "life":
-                print("You have life beam, and imp in your spell deck")
-            elif wizard== "Death" or wizard== "death":
-                print("You have death blast, and dark pixie in your spell deck")
-            elif wizard== "Myth" or wizard== "myth":
-                print("You have myth blast, and blood bat in your spell deck")
-            elif wizard== "Storm" or wizard== "storm":
-                print("You have lightning spark, and storm snake in your spell deck")
-            elif wizard== "Balance" or wizard== "balance":
-                print("You have balance beam, and scarab in your spell deck")
-            else:
-                print("Because you picked an invalid class you cannot continue the game, please reload the page")
-                time.sleep(2)
-                spell= raw_input("Enter your spell (please use only lowercase):")
-                time.sleep(2)
-                if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                    enemy = enemy - 60
-                    print ("You have delt 60 dam to the enemy. Enemy health =")
-                    print enemy
-                elif spell== "storm snake":
-                    enemy = enemy -130
-                    print ("You have delt 130 dam to the enemy. Enemy health =")
-                    print enemy
-                elif spell== "fire cat": 
-                    enemy = enemy -120
-                    print ("You have delt 120 dam to the enemy. Enemy health =")
-                    print enemy
-                elif spell== "blood bat":
-                    enemy = enemy -110
-                    print ("You have delt 110 dam to the enemy. Enemy health =")
-                    print enemy
-                elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                    enemy = enemy - 100
-                    print ("You have delt 100 dam to the enemy. Enemy health =")
-                    print enemy
+                if wizard== "Fire" or wizard== "fire":
+                    print("You have flame spark, and fire cat in your spell deck")
+            `   elif wizard== "Ice" or wizard== "ice":
+                    print("You have ice shard, and frost beetle in your spell deck")
+                elif wizard== "Life" or wizard== "life":
+                    print("You have life beam, and imp in your spell deck")
+                elif wizard== "Death" or wizard== "death":
+                    print("You have death blast, and dark pixie in your spell deck")
+                elif wizard== "Myth" or wizard== "myth":
+                    print("You have myth blast, and blood bat in your spell deck")
+                elif wizard== "Storm" or wizard== "storm":
+                    print("You have lightning spark, and storm snake in your spell deck")
+                elif wizard== "Balance" or wizard== "balance":
+                    print("You have balance beam, and scarab in your spell deck")
                 else:
-                    print("You mistyped and your spell fizzled")
-                if enemy <= 0:
-                    time.sleep(2)
-                    print("You win!")
-                    done= False
-                    break
-                else:
-                    time.sleep(3)
-                    print("Malistaire's minion is starting it's turn")
-                    time.sleep(2)
-                    print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                    time.sleep(3)
-                    character = character -100
-                    print("Your health=")
-                    print character
-                    time.sleep(3)
-                    print("You are starting your turn")
-                    time.sleep(3)
-                    if wizard== "Fire" or wizard== "fire":
-                        print("You have flame spark, and fire cat in your spell deck")
-                    elif wizard== "Ice" or wizard== "ice":
-                        print("You have ice shard, and frost beetle in your spell deck")
-                    elif wizard== "Life" or wizard== "life":
-                        print("You have life beam, and imp in your spell deck")
-                    elif wizard== "Death" or wizard== "death":
-                        print("You have death blast, and dark pixie in your spell deck")
-                    elif wizard== "Myth" or wizard== "myth":
-                        print("You have myth blast, and blood bat in your spell deck")
-                    elif wizard== "Storm" or wizard== "storm":
-                        print("You have lightning spark, and storm snake in your spell deck")
-                    elif wizard== "Balance" or wizard== "balance":
-                        print("You have balance beam, and scarab in your spell deck")
-                    else:
-                        print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                    print("Because you picked an invalid class you cannot continue the game, please reload the page")
                     time.sleep(2)
                     spell= raw_input("Enter your spell (please use only lowercase):")
                     time.sleep(2)
@@ -482,26 +424,28 @@ while (done):
                         print ("You have delt 110 dam to the enemy. Enemy health =")
                         print enemy
                     elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                        enemy = enemy - 100
+                            enemy = enemy - 100
                         print ("You have delt 100 dam to the enemy. Enemy health =")
                         print enemy
                     else:
                         print("You mistyped and your spell fizzled")
                     if enemy <= 0:
+                        time.sleep(2)
                         print("You win!")
+                        done= False
                         break
                     else:
                         time.sleep(3)
                         print("Malistaire's minion is starting it's turn")
                         time.sleep(2)
                         print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                        character = character - 100
                         time.sleep(3)
+                        character = character -100
                         print("Your health=")
                         print character
                         time.sleep(3)
-                        print "You are starting your turn"
-                        time.sleep(2)
+                        print("You are starting your turn")
+                        time.sleep(3)
                         if wizard== "Fire" or wizard== "fire":
                             print("You have flame spark, and fire cat in your spell deck")
                         elif wizard== "Ice" or wizard== "ice":
@@ -518,63 +462,7 @@ while (done):
                             print("You have balance beam, and scarab in your spell deck")
                         else:
                             print("Because you picked an invalid class you cannot continue the game, please reload the page")
-                        time.sleep(3)
-                        spell= raw_input("Enter your spell (please use only lowercase):")
-                        time.sleep(2)
-                        if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                            enemy = enemy - 60
-                            print ("You have delt 60 dam to the enemy. Enemy health =")
-                            print enemy
-                        elif spell== "storm snake":
-                            enemy = enemy -130
-                            print ("You have delt 130 dam to the enemy. Enemy health =")
-                            print enemy
-                        elif spell== "fire cat": 
-                            enemy = enemy -120
-                            print ("You have delt 120 dam to the enemy. Enemy health =")
-                            print enemy
-                        elif spell== "blood bat":
-                            enemy = enemy -110
-                            print ("You have delt 110 dam to the enemy. Enemy health =")
-                            print enemy
-                        elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                            enemy = enemy - 100
-                            print ("You have delt 100 dam to the enemy. Enemy health =")
-                            print enemy
-                        else:
-                            print("You mistyped and your spell fizzled")
-                        if enemy <= 0:
-                            print("You win!")
-                            break
-                        else:
-                            time.sleep(3)
-                            print("Malistaire's minion is starting it's turn")
                             time.sleep(2)
-                            print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                            time.sleep(3)
-                            character = character -100
-                            print("Your health=")
-                            print character
-                            time.sleep(3)
-                            print("You are starting your turn")
-                            time.sleep(2)
-                            if wizard== "Fire" or wizard== "fire":
-                                print("You have flame spark, and fire cat in your spell deck")
-                            elif wizard== "Ice" or wizard== "ice":
-                                print("You have ice shard, and frost beetle in your spell deck")
-                            elif wizard== "Life" or wizard== "life":
-                                print("You have life beam, and imp in your spell deck")
-                            elif wizard== "Death" or wizard== "death":
-                                print("You have death blast, and dark pixie in your spell deck")
-                            elif wizard== "Myth" or wizard== "myth":
-                                print("You have myth blast, and blood bat in your spell deck")
-                            elif wizard== "Storm" or wizard== "storm":
-                                print("You have lightning spark, and storm snake in your spell deck")
-                            elif wizard== "Balance" or wizard== "balance":
-                                print("You have balance beam, and scarab in your spell deck")
-                            else:
-                                print("Because you picked an invalid class you cannot continue the game, please reload the page")
-                            time.sleep(3)
                             spell= raw_input("Enter your spell (please use only lowercase):")
                             time.sleep(2)
                             if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
@@ -601,10 +489,11 @@ while (done):
                                 print("You mistyped and your spell fizzled")
                             if enemy <= 0:
                                 print("You win!")
+                                done= False
                                 break
                             else:
                                 time.sleep(3)
-                                print("Malistaire's minion is starting his turn")
+                                print("Malistaire's minion is starting it's turn")
                                 time.sleep(2)
                                 print("Malistaire's minion uses dark pixie and deals 100 dam.")
                                 character = character - 100
@@ -630,60 +519,6 @@ while (done):
                                     print("You have balance beam, and scarab in your spell deck")
                                 else:
                                     print("Because you picked an invalid class you cannot continue the game, please reload the page")
-                                spell= raw_input("Enter your spell (please use only lowercase):")
-                                if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                                    enemy = enemy - 60
-                                    print ("You have delt 60 dam to the enemy. Enemy health =")
-                                    print enemy
-                                elif spell== "storm snake":
-                                    enemy = enemy -130
-                                    print ("You have delt 130 dam to the enemy. Enemy health =")
-                                    print enemy
-                                elif spell== "fire cat": 
-                                    enemy = enemy -120
-                                    print ("You have delt 120 dam to the enemy. Enemy health =")
-                                    print enemy
-                                elif spell== "blood bat":
-                                    enemy = enemy -110
-                                    print ("You have delt 110 dam to the enemy. Enemy health =")
-                                    print enemy
-                                elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                                    enemy = enemy - 100
-                                    print ("You have delt 100 dam to the enemy. Enemy health =")
-                                    print enemy
-                                else:
-                                    print("You mistyped and your spell fizzled")
-                                if enemy <= 0:
-                                    print("You win!")
-                                    break
-                                else:
-                                    time.sleep(3)
-                                    print("Malistaire's minion is starting it's turn")
-                                    time.sleep(2)
-                                    print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                                    character = character -100
-                                    time.sleep(3)
-                                    print("Your health=")
-                                    print character
-                                    time.sleep(3)
-                                    print("You are starting your turn")
-                                    time.sleep(2)
-                                    if wizard== "Fire" or wizard== "fire":
-                                        print("You have flame spark, and fire cat in your spell deck")
-                                    elif wizard== "Ice" or wizard== "ice":
-                                        print("You have ice shard, and frost beetle in your spell deck")
-                                    elif wizard== "Life" or wizard== "life":
-                                        print("You have life beam, and imp in your spell deck")
-                                    elif wizard== "Death" or wizard== "death":
-                                        print("You have death blast, and dark pixie in your spell deck")
-                                    elif wizard== "Myth" or wizard== "myth":
-                                        print("You have myth blast, and blood bat in your spell deck")
-                                    elif wizard== "Storm" or wizard== "storm":
-                                        print("You have lightning spark, and storm snake in your spell deck")
-                                    elif wizard== "Balance" or wizard== "balance":
-                                        print("You have balance beam, and scarab in your spell deck")
-                                    else:
-                                        print("Because you picked an invalid class you cannot continue the game, please reload the page")
                                     time.sleep(3)
                                     spell= raw_input("Enter your spell (please use only lowercase):")
                                     time.sleep(2)
@@ -711,18 +546,19 @@ while (done):
                                         print("You mistyped and your spell fizzled")
                                     if enemy <= 0:
                                         print("You win!")
+                                        done= False    
                                         break
                                     else:
                                         time.sleep(3)
                                         print("Malistaire's minion is starting it's turn")
                                         time.sleep(2)
                                         print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                                        character = character - 100
                                         time.sleep(3)
+                                        character = character -100
                                         print("Your health=")
                                         print character
                                         time.sleep(3)
-                                        print "You are starting your turn"
+                                        print("You are starting your turn")
                                         time.sleep(2)
                                         if wizard== "Fire" or wizard== "fire":
                                             print("You have flame spark, and fire cat in your spell deck")
@@ -766,9 +602,178 @@ while (done):
                                         else:
                                             print("You mistyped and your spell fizzled")
                                         if enemy <= 0:
+                                            print("You win!")
+                                            done= False
+                                            break
+                                        else:
+                                            time.sleep(3)
+                                            print("Malistaire's minion is starting his turn")
+                                            time.sleep(2)
+                                            print("Malistaire's minion uses dark pixie and deals 100 dam.")
+                                            character = character - 100
+                                            time.sleep(3)
+                                            print("Your health=")
+                                            print character
+                                            time.sleep(3)
+                                            print "You are starting your turn"
+                                            time.sleep(2)
+                                            if wizard== "Fire" or wizard== "fire":
+                                                print("You have flame spark, and fire cat in your spell deck")
+                                            elif wizard== "Ice" or wizard== "ice":
+                                                print("You have ice shard, and frost beetle in your spell deck")
+                                            elif wizard== "Life" or wizard== "life":
+                                                print("You have life beam, and imp in your spell deck")
+                                            elif wizard== "Death" or wizard== "death":
+                                                print("You have death blast, and dark pixie in your spell deck")
+                                            elif wizard== "Myth" or wizard== "myth":
+                                                print("You have myth blast, and blood bat in your spell deck")
+                                            elif wizard== "Storm" or wizard== "storm":
+                                                print("You have lightning spark, and storm snake in your spell deck")
+                                            elif wizard== "Balance" or wizard== "balance":
+                                                print("You have balance beam, and scarab in your spell deck")
+                                            else:
+                                            print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                                            spell= raw_input("Enter your spell (please use only lowercase):")
+                                            if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+                                                enemy = enemy - 60
+                                                print ("You have delt 60 dam to the enemy. Enemy health =")
+                                                print enemy
+                                            elif spell== "storm snake":
+                                                enemy = enemy -130
+                                                print ("You have delt 130 dam to the enemy. Enemy health =")
+                                                print enemy
+                                            elif spell== "fire cat": 
+                                                enemy = enemy -120
+                                                print ("You have delt 120 dam to the enemy. Enemy health =")
+                                                print enemy
+                                            elif spell== "blood bat":
+                                                enemy = enemy -110
+                                                print ("You have delt 110 dam to the enemy. Enemy health =")
+                                                print enemy
+                                            elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                                                enemy = enemy - 100
+                                                print ("You have delt 100 dam to the enemy. Enemy health =")
+                                                print enemy
+                                            else:
+                                                print("You mistyped and your spell fizzled")
+                                            if enemy <= 0:
                                                 print("You win!")
                                                 done= False
                                                 break
+                                            else:
+                                                time.sleep(3)
+                                                print("Malistaire's minion is starting it's turn")
+                                                time.sleep(2)
+                                                print("Malistaire's minion uses dark pixie and deals 100 dam.")
+                                                character = character -100
+                                                time.sleep(3)
+                                                print("Your health=")
+                                                print character
+                                                time.sleep(3)
+                                                print("You are starting your turn")
+                                                time.sleep(2)
+                                                if wizard== "Fire" or wizard== "fire":
+                                                    print("You have flame spark, and fire cat in your spell deck")
+                                                elif wizard== "Ice" or wizard== "ice":
+                                                    print("You have ice shard, and frost beetle in your spell deck")
+                                                elif wizard== "Life" or wizard== "life":
+                                                    print("You have life beam, and imp in your spell deck")
+                                                elif wizard== "Death" or wizard== "death":
+                                                    print("You have death blast, and dark pixie in your spell deck")
+                                                elif wizard== "Myth" or wizard== "myth":
+                                                    print("You have myth blast, and blood bat in your spell deck")
+                                                elif wizard== "Storm" or wizard== "storm":
+                                                    print("You have lightning spark, and storm snake in your spell deck")
+                                                elif wizard== "Balance" or wizard== "balance":
+                                                    print("You have balance beam, and scarab in your spell deck")
+                                                else:
+                                                print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                                                time.sleep(3)
+                                                spell= raw_input("Enter your spell (please use only lowercase):")
+                                                time.sleep(2)
+                                                if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+                                                    enemy = enemy - 60
+                                                    print ("You have delt 60 dam to the enemy. Enemy health =")
+                                                    print enemy
+                                                elif spell== "storm snake":
+                                                    enemy = enemy -130
+                                                    print ("You have delt 130 dam to the enemy. Enemy health =")
+                                                    print enemy
+                                                elif spell== "fire cat": 
+                                                    enemy = enemy -120
+                                                    print ("You have delt 120 dam to the enemy. Enemy health =")
+                                                    print enemy
+                                                elif spell== "blood bat":
+                                                    enemy = enemy -110
+                                                    print ("You have delt 110 dam to the enemy. Enemy health =")
+                                                    print enemy
+                                                elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                                                    enemy = enemy - 100
+                                                    print ("You have delt 100 dam to the enemy. Enemy health =")
+                                                    print enemy
+                                                else:
+                                                    print("You mistyped and your spell fizzled")
+                                                if enemy <= 0:
+                                                    print("You win!")
+                                                    done= False
+                                                    break
+                                                else:
+                                                    time.sleep(3)
+                                                   print("Malistaire's minion is starting it's turn")
+                                                    time.sleep(2)
+                                                    print("Malistaire's minion uses dark pixie and deals 100 dam.")
+                                                    character = character - 100
+                                                    time.sleep(3)
+                                                    print("Your health=")
+                                                    print character
+                                                    time.sleep(3)
+                                                    print "You are starting your turn"
+                                                    time.sleep(2)
+                                                    if wizard== "Fire" or wizard== "fire":
+                                                        print("You have flame spark, and fire cat in your spell deck")
+                                                    elif wizard== "Ice" or wizard== "ice":
+                                                        print("You have ice shard, and frost beetle in your spell deck")
+                                                    elif wizard== "Life" or wizard== "life":
+                                                        print("You have life beam, and imp in your spell deck")
+                                                    elif wizard== "Death" or wizard== "death":
+                                                        print("You have death blast, and dark pixie in your spell deck")
+                                                    elif wizard== "Myth" or wizard== "myth":
+                                                        print("You have myth blast, and blood bat in your spell deck")
+                                                    elif wizard== "Storm" or wizard== "storm":
+                                                        print("You have lightning spark, and storm snake in your spell deck")
+                                                    elif wizard== "Balance" or wizard== "balance":
+                                                        print("You have balance beam, and scarab in your spell deck")
+                                                    else:
+                                                    print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                                                    time.sleep(3)
+                                                    spell= raw_input("Enter your spell (please use only lowercase):")
+                                                    time.sleep(2)
+                                                    if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+                                                        enemy = enemy - 60
+                                                        print ("You have delt 60 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== "storm snake":
+                                                        enemy = enemy -130
+                                                        print ("You have delt 130 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== "fire cat": 
+                                                        enemy = enemy -120
+                                                        print ("You have delt 120 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== "blood bat":
+                                                        enemy = enemy -110
+                                                        print ("You have delt 110 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                                                        enemy = enemy - 100
+                                                        print ("You have delt 100 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    else:
+                                                        print("You mistyped and your spell fizzled")
+                                                    if enemy <= 0:
+                                                        print("You win!")
+                                                        done= False
+                                                        break
 done2= True
 while (done2):
     time.sleep(3)
@@ -1226,228 +1231,228 @@ while (done2):
                                                         print("You have balance beam, scarab, and scorpion in your spell deck")
                                                     else:
                                                         print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                                                    time.sleep(3)
+                                                    spell= raw_input("Enter your spell (please use only lowercase):")
+                                                    time.sleep(2)
+                                                    if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+                                                        enemy = enemy - 60
+                                                        print ("You have delt 60 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== "storm snake":
+                                                        enemy = enemy -130
+                                                        print ("You have delt 130 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== "fire cat": 
+                                                        enemy = enemy -120
+                                                        print ("You have delt 120 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== "blood bat":
+                                                        enemy = enemy -110
+                                                        print ("You have delt 110 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== "fire elf":
+                                                        enemy = enemy- 220
+                                                        print("You have delt 220 dam to the enemy. Enemy helath =")
+                                                        print enemy
+                                                    elif spell== ("lightning bat"):
+                                                        enemy = enemy -240
+                                                        print("You have delt 240 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== ("troll"):
+                                                        enemy = enemy - 200
+                                                        print("You have delt 200 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== ("ghoul"):
+                                                        enemy = enemy -160
+                                                        character = character + 80
+                                                        print("You have delt 160 dam the enemy and restored 80 health to your self.")
                                                         time.sleep(3)
-                                                        spell= raw_input("Enter your spell (please use only lowercase):")
-                                                        time.sleep(2)
-                                                        if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                                                            enemy = enemy - 60
-                                                            print ("You have delt 60 dam to the enemy. Enemy health =")
-                                                            print enemy
-                                                        elif spell== "storm snake":
-                                                            enemy = enemy -130
-                                                            print ("You have delt 130 dam to the enemy. Enemy health =")
-                                                            print enemy
-                                                        elif spell== "fire cat": 
-                                                            enemy = enemy -120
-                                                            print ("You have delt 120 dam to the enemy. Enemy health =")
-                                                            print enemy
-                                                        elif spell== "blood bat":
-                                                            enemy = enemy -110
-                                                            print ("You have delt 110 dam to the enemy. Enemy health =")
-                                                            print enemy
-                                                        elif spell== "fire elf":
-                                                            enemy = enemy- 220
-                                                            print("You have delt 220 dam to the enemy. Enemy helath =")
-                                                            print enemy
-                                                        elif spell== ("lightning bat"):
-                                                            enemy = enemy -240
-                                                            print("You have delt 240 dam to the enemy. Enemy health =")
-                                                            print enemy
-                                                        elif spell== ("troll"):
-                                                            enemy = enemy - 200
-                                                            print("You have delt 200 dam to the enemy. Enemy health =")
-                                                            print enemy
-                                                        elif spell== ("ghoul"):
-                                                            enemy = enemy -160
-                                                            character = character + 80
-                                                            print("You have delt 160 dam the enemy and restored 80 health to your self.")
-                                                            time.sleep(3)
-                                                            print("Enemy health = " + enemy)
-                                                            time.sleep(3)
-                                                            print("Your health = " + character)
-                                                            time.sleep(3)
-                                                        elif spell== ("snow serpent") or spell== ("leprachaun") or spell== ("scorpion"):
-                                                            enemy = enemy -190
-                                                            print("You have del 190 dam to the enemy. Enemy health =")
-                                                            print enemy
-                                                        elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                                                            enemy = enemy - 100
-                                                            print ("You have delt 100 dam to the enemy. Enemy health =")
-                                                            print enemy
+                                                        print("Enemy health = " + enemy)
+                                                        time.sleep(3)
+                                                        print("Your health = " + character)
+                                                        time.sleep(3)
+                                                    elif spell== ("snow serpent") or spell== ("leprachaun") or spell== ("scorpion"):
+                                                        enemy = enemy -190
+                                                        print("You have del 190 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                                                        enemy = enemy - 100
+                                                        print ("You have delt 100 dam to the enemy. Enemy health =")
+                                                        print enemy
+                                                    else:
+                                                        print("You mistyped and your spell fizzled")
+                                                        if enemy <= 0:
+                                                            print("You win!")
+                                                            done= False
+                                                            break
                                                         else:
-                                                            print("You mistyped and your spell fizzled")
-                                                            if enemy <= 0:
-                                                                print("You win!")
+                                                            print("Lost soul is starting their turn")
+                                                            time.sleep(2)
+                                                            print("Lost Soul uses dark blast and deals 80 dam.")
+                                                            character = character -80
+                                                            time.sleep(3)
+                                                            print("Your health=")
+                                                            print character
+                                                            time.sleep(3)
+                                                            if character <= 0:
+                                                                print("You have died! Please restart the game and try again")
                                                                 done= False
                                                                 break
                                                             else:
-                                                                print("Lost soul is starting their turn")
+                                                                print("Your turn is starting")
                                                                 time.sleep(2)
-                                                                print("Lost Soul uses dark blast and deals 80 dam.")
-                                                                character = character -80
-                                                                time.sleep(3)
-                                                                print("Your health=")
-                                                                print character
-                                                                time.sleep(3)
-                                                                if character <= 0:
-                                                                    print("You have died! Please restart the game and try again")
-                                                                    done= False
-                                                                    break
+                                                                if wizard== "Fire" or wizard== "fire":
+                                                                    print("You have flame spark, fire cat and fire elf in your spell deck")
+                                                                elif wizard== "Ice" or wizard== "ice":
+                                                                    print("You have ice shard, frost beetle, and snow serpent in your spell deck")
+                                                                elif wizard== "Life" or wizard== "life":
+                                                                    print("You have life beam, imp, and leprechaun in your spell deck")
+                                                                elif wizard== "Death" or wizard== "death":
+                                                                    print("You have death blast, dark pixie, ghoul in your spell deck")
+                                                                elif wizard== "Myth" or wizard== "myth":
+                                                                    print("You have myth blast, blood bat, and troll in your spell deck")
+                                                                elif wizard== "Storm" or wizard== "storm":
+                                                                    print("You have lightning spark, storm snake, and lightning bat in your spell deck")
+                                                                elif wizard== "Balance" or wizard== "balance":
+                                                                    print("You have balance beam, scarab, and scorpion in your spell deck")
                                                                 else:
-                                                                    print("Your turn is starting")
+                                                                    print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                                                                spell= raw_input("Enter your spell (please use only lowercase):")
+                                                                if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+                                                                    enemy = enemy - 60
+                                                                    print ("You have delt 60 dam to the enemy. Enemy health =")
+                                                                    print enemy
+                                                                elif spell== "storm snake":
+                                                                    enemy = enemy -130
+                                                                    print ("You have delt 130 dam to the enemy. Enemy health =")
+                                                                    print enemy
+                                                                elif spell== "fire cat": 
+                                                                    enemy = enemy -120
+                                                                    print ("You have delt 120 dam to the enemy. Enemy health =")
+                                                                    print enemy
+                                                                elif spell== "blood bat":
+                                                                    enemy = enemy -110
+                                                                    print ("You have delt 110 dam to the enemy. Enemy health =")
+                                                                    print enemy
+                                                                elif spell== "fire elf":
+                                                                    enemy = enemy- 220
+                                                                    print("You have delt 220 dam to the enemy. Eney helath =")
+                                                                    print enemy
+                                                                elif spell== ("lightning bat"):
+                                                                    enemy = enemy -240
+                                                                    print("You have delt 240 dam to the enemy. Enemy health =")
+                                                                    print enemy
+                                                                elif spell== ("troll"):
+                                                                    enemy = enemy - 200
+                                                                    print("You have delt 200 dam to the enemy. Enemy health =")
+                                                                    print enemy
+                                                                elif spell== ("ghoul"):
+                                                                    enemy = enemy -160
+                                                                    character = character + 80
+                                                                    print("You have delt 160 dam the enemy and restored 80 health to your self.")
+                                                                    time.sleep(4)
+                                                                    print("Enemy health = " + enemy)
                                                                     time.sleep(2)
-                                                                    if wizard== "Fire" or wizard== "fire":
-                                                                        print("You have flame spark, fire cat and fire elf in your spell deck")
-                                                                    elif wizard== "Ice" or wizard== "ice":
-                                                                        print("You have ice shard, frost beetle, and snow serpent in your spell deck")
-                                                                    elif wizard== "Life" or wizard== "life":
-                                                                        print("You have life beam, imp, and leprechaun in your spell deck")
-                                                                    elif wizard== "Death" or wizard== "death":
-                                                                        print("You have death blast, dark pixie, ghoul in your spell deck")
-                                                                    elif wizard== "Myth" or wizard== "myth":
-                                                                        print("You have myth blast, blood bat, and troll in your spell deck")
-                                                                    elif wizard== "Storm" or wizard== "storm":
-                                                                        print("You have lightning spark, storm snake, and lightning bat in your spell deck")
-                                                                    elif wizard== "Balance" or wizard== "balance":
-                                                                        print("You have balance beam, scarab, and scorpion in your spell deck")
-                                                                    else:
-                                                                        print("Because you picked an invalid class you cannot continue the game, please reload the page")
-                                                                        spell= raw_input("Enter your spell (please use only lowercase):")
-                                                                        if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                                                                            enemy = enemy - 60
-                                                                            print ("You have delt 60 dam to the enemy. Enemy health =")
-                                                                            print enemy
-                                                                        elif spell== "storm snake":
-                                                                            enemy = enemy -130
-                                                                            print ("You have delt 130 dam to the enemy. Enemy health =")
-                                                                            print enemy
-                                                                        elif spell== "fire cat": 
-                                                                            enemy = enemy -120
-                                                                            print ("You have delt 120 dam to the enemy. Enemy health =")
-                                                                            print enemy
-                                                                        elif spell== "blood bat":
-                                                                            enemy = enemy -110
-                                                                            print ("You have delt 110 dam to the enemy. Enemy health =")
-                                                                            print enemy
-                                                                        elif spell== "fire elf":
-                                                                            enemy = enemy- 220
-                                                                            print("You have delt 220 dam to the enemy. Enemy helath =")
-                                                                            print enemy
-                                                                        elif spell== ("lightning bat"):
-                                                                            enemy = enemy -240
-                                                                            print("You have delt 240 dam to the enemy. Enemy health =")
-                                                                            print enemy
-                                                                        elif spell== ("troll"):
-                                                                            enemy = enemy - 200
-                                                                            print("You have delt 200 dam to the enemy. Enemy health =")
-                                                                            print enemy
-                                                                        elif spell== ("ghoul"):
-                                                                            enemy = enemy -160
-                                                                            character = character + 80
-                                                                            print("You have delt 160 dam the enemy and restored 80 health to your self.")
-                                                                            time.sleep(4)
-                                                                            print("Enemy health = " + enemy)
-                                                                            time.sleep(2)
-                                                                            print("Your health = " + character)
-                                                                            time.sleep(2)
-                                                                        elif spell== ("snow serpent") or spell== ("leprachaun") or spell== ("scorpion"):
-                                                                            enemy = enemy -190
-                                                                            print("You have del 190 dam to the enemy. Enemy health =")
-                                                                            print enemy
-                                                                        elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                                                                            enemy = enemy - 100
-                                                                            print ("You have delt 100 dam to the enemy. Enemy health =")
-                                                                            print enemy
+                                                                    print("Your health = " + character)
+                                                                    time.sleep(2)
+                                                                elif spell== ("snow serpent") or spell== ("leprachaun") or spell== ("scorpion"):
+                                                                    enemy = enemy -190
+                                                                    print("You have del 190 dam to the enemy. Enemy health =")
+                                                                    print enemy
+                                                                elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                                                                    enemy = enemy - 100
+                                                                    print ("You have delt 100 dam to the enemy. Enemy health =")
+                                                                    print enemy
+                                                                else:
+                                                                    print("You mistyped and your spell fizzle")
+                                                                    if enemy <= 0:
+                                                                        print("You win!")
+                                                                        done= False 
+                                                                        break
+                                                                    else:                                                                            
+                                                                        print("Lost soul is starting their turn")
+                                                                        time.sleep(2)
+                                                                        print("Lost Soul uses dark blast and deals 80 dam.")
+                                                                        time.sleep(3)
+                                                                        character = character -80
+                                                                        print("Your health=")
+                                                                        print character
+                                                                        if character <= 0:
+                                                                            print("You have died! Please restart the game and try again")
+                                                                            done= False
+                                                                            break
                                                                         else:
-                                                                            print("You mistyped and your spell fizzle")
-                                                                            if enemy <= 0:
-                                                                                print("You win!")
-                                                                                done= False
-                                                                                break
+                                                                            time.sleep(3)
+                                                                            print("Your turn is starting")
+                                                                            time.sleep(2)
+                                                                            if wizard== "Fire" or wizard== "fire":
+                                                                                print("You have flame spark, fire cat and fire elf in your spell deck")
+                                                                            elif wizard== "Ice" or wizard== "ice":
+                                                                                print("You have ice shard, frost beetle, and snow serpent in your spell deck")
+                                                                            elif wizard== "Life" or wizard== "life":
+                                                                                print("You have life beam, imp, and leprechaun in your spell deck")
+                                                                            elif wizard== "Death" or wizard== "death":
+                                                                                print("You have death blast, dark pixie, ghoul in your spell deck")
+                                                                            elif wizard== "Myth" or wizard== "myth":
+                                                                                print("You have myth blast, blood bat, and troll in your spell deck")
+                                                                            elif wizard== "Storm" or wizard== "storm":
+                                                                                print("You have lightning spark, storm snake, and lightning bat in your spell deck")
+                                                                            elif wizard== "Balance" or wizard== "balance":
+                                                                                print("You have balance beam, scarab, and scorpion in your spell deck")
                                                                             else:
-                                                                                print("Lost soul is starting their turn")
-                                                                                time.sleep(2)
-                                                                                print("Lost Soul uses dark blast and deals 80 dam.")
+                                                                                print("Because you picked an invalid class you cannot continue the game, please reload the page")
                                                                                 time.sleep(3)
-                                                                                character = character -80
-                                                                                print("Your health=")
-                                                                                print character
-                                                                                if character <= 0:
-                                                                                    print("You have died! Please restart the game and try again")
-                                                                                    done= False
-                                                                                    break
+                                                                                spell= raw_input("Enter your spell (please use only lowercase):")
+                                                                                time.sleep(2)
+                                                                                if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+                                                                                    enemy = enemy - 60
+                                                                                    print ("You have delt 60 dam to the enemy. Enemy health =")
+                                                                                    print enemy
+                                                                                elif spell== "storm snake":
+                                                                                    enemy = enemy -130
+                                                                                    print ("You have delt 130 dam to the enemy. Enemy health =")
+                                                                                    print enemy
+                                                                                elif spell== "fire cat": 
+                                                                                    enemy = enemy -120
+                                                                                    print ("You have delt 120 dam to the enemy. Enemy health =")
+                                                                                    print enemy
+                                                                                elif spell== "blood bat":
+                                                                                    enemy = enemy -110
+                                                                                    print ("You have delt 110 dam to the enemy. Enemy health =")
+                                                                                    print enemy
+                                                                                elif spell== "fire elf":
+                                                                                    enemy = enemy- 220
+                                                                                    print("You have delt 220 dam to the enemy. Enemy helath =")
+                                                                                    print enemy
+                                                                                elif spell== ("lightning bat"):
+                                                                                    enemy = enemy -240
+                                                                                    print("You have delt 240 dam to the enemy. Enemy health =")
+                                                                                    print enemy
+                                                                                elif spell== ("troll"):
+                                                                                    enemy = enemy - 200
+                                                                                    print("You have delt 200 dam to the enemy. Enemy health =")
+                                                                                    print enemy
+                                                                                elif spell== ("ghoul"):
+                                                                                    enemy = enemy -160
+                                                                                    character = character + 80
+                                                                                    print("You have delt 160 dam the enemy and restored 80 health to your self.")
+                                                                                    print("Enemy health = " + enemy)
+                                                                                    print("Your health = " + character)
+                                                                                elif spell== ("snow serpent") or spell== ("leprachaun") or spell== ("scorpion"):
+                                                                                    enemy = enemy -190
+                                                                                    print("You have del 190 dam to the enemy. Enemy health =")
+                                                                                    print enemy
+                                                                                elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                                                                                    enemy = enemy - 100
+                                                                                    print ("You have delt 100 dam to the enemy. Enemy health =")
+                                                                                    print enemy
                                                                                 else:
-                                                                                    time.sleep(3)
-                                                                                    print("Your turn is starting")
-                                                                                    time.sleep(2)
-                                                                                    if wizard== "Fire" or wizard== "fire":
-                                                                                        print("You have flame spark, fire cat and fire elf in your spell deck")
-                                                                                    elif wizard== "Ice" or wizard== "ice":
-                                                                                        print("You have ice shard, frost beetle, and snow serpent in your spell deck")
-                                                                                    elif wizard== "Life" or wizard== "life":
-                                                                                        print("You have life beam, imp, and leprechaun in your spell deck")
-                                                                                    elif wizard== "Death" or wizard== "death":
-                                                                                        print("You have death blast, dark pixie, ghoul in your spell deck")
-                                                                                    elif wizard== "Myth" or wizard== "myth":
-                                                                                        print("You have myth blast, blood bat, and troll in your spell deck")
-                                                                                    elif wizard== "Storm" or wizard== "storm":
-                                                                                        print("You have lightning spark, storm snake, and lightning bat in your spell deck")
-                                                                                    elif wizard== "Balance" or wizard== "balance":
-                                                                                        print("You have balance beam, scarab, and scorpion in your spell deck")
-                                                                                    else:
-                                                                                        print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                                                                                    print("You mistyped and your spell fizzled")
+                                                                                    if enemy <= 0:
+                                                                                        print("You win!")
                                                                                         time.sleep(3)
-                                                                                        spell= raw_input("Enter your spell (please use only lowercase):")
-                                                                                        time.sleep(2)
-                                                                                        if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                                                                                            enemy = enemy - 60
-                                                                                            print ("You have delt 60 dam to the enemy. Enemy health =")
-                                                                                            print enemy
-                                                                                        elif spell== "storm snake":
-                                                                                            enemy = enemy -130
-                                                                                            print ("You have delt 130 dam to the enemy. Enemy health =")
-                                                                                            print enemy
-                                                                                        elif spell== "fire cat": 
-                                                                                            enemy = enemy -120
-                                                                                            print ("You have delt 120 dam to the enemy. Enemy health =")
-                                                                                            print enemy
-                                                                                        elif spell== "blood bat":
-                                                                                            enemy = enemy -110
-                                                                                            print ("You have delt 110 dam to the enemy. Enemy health =")
-                                                                                            print enemy
-                                                                                        elif spell== "fire elf":
-                                                                                            enemy = enemy- 220
-                                                                                            print("You have delt 220 dam to the enemy. Enemy helath =")
-                                                                                            print enemy
-                                                                                        elif spell== ("lightning bat"):
-                                                                                            enemy = enemy -240
-                                                                                            print("You have delt 240 dam to the enemy. Enemy health =")
-                                                                                            print enemy
-                                                                                        elif spell== ("troll"):
-                                                                                            enemy = enemy - 200
-                                                                                            print("You have delt 200 dam to the enemy. Enemy health =")
-                                                                                            print enemy
-                                                                                        elif spell== ("ghoul"):
-                                                                                            enemy = enemy -160
-                                                                                            character = character + 80
-                                                                                            print("You have delt 160 dam the enemy and restored 80 health to your self.")
-                                                                                            print("Enemy health = " + enemy)
-                                                                                            print("Your health = " + character)
-                                                                                        elif spell== ("snow serpent") or spell== ("leprachaun") or spell== ("scorpion"):
-                                                                                            enemy = enemy -190
-                                                                                            print("You have del 190 dam to the enemy. Enemy health =")
-                                                                                            print enemy
-                                                                                        elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                                                                                            enemy = enemy - 100
-                                                                                            print ("You have delt 100 dam to the enemy. Enemy health =")
-                                                                                            print enemy
-                                                                                        else:
-                                                                                            print("You mistyped and your spell fizzled")
-                                                                                            if enemy <= 0:
-                                                                                                print("You win!")
-                                                                                                time.sleep(3)
-                                                                                                done= False
-                                                                                                break
+                                                                                        done= False
+                                                                                        break
 done3= True
 while (done3):
     print("You have received a Sturdy Helm for defeating a lost soul, it will give you + 75 max health")
@@ -1458,6 +1463,9 @@ while (done3):
     sturdy_helm = 75
     helm = sturdy_helm
     character = character + helm
+    chestplate = 0
+    leggings = 0
+    boots = 0
     print("Your character now has" + character + "health")
     time.sleep(3.7)
     print("You continue on down the alley, to the Hedge Maze, in Unicorn Way")
@@ -1512,46 +1520,223 @@ while (done3):
     if shop== ("yes") or shop== ("y") or shop== ("Yes"):
         print("Traveling to shop...")
         time.sleep(3)
-        print("If you visit the shop but you don't want to buy anything, press enter without typing anything. The shop has a sturdy helm, copper helm, ")
-        time.sleep(14)
-        raw_input("What would you like to buy?")
+        print("Your money =")
+        print money
         time.sleep(2)
-        if raw_input== ("Helm"):
-            print("Yeet you already have that, so you wasted 100 dollars lol")
-            money = money - helm
-            time.sleep(4)
-            print("You have" + money + "dollars remaining")
-            time.sleep(3)
-        elif raw_input== ("Chestplate"):
-            chestplate = sturdy_chestplate
-            print ("You have bought Sturdy Chestplate for $100")
-            time.sleep(4)
-            print ("You have" + money + "dollars remaing")
-            time.sleep(3.4)
-            print ("You now have" + character + "health")
-            time.sleep(3)
-        elif item== ("Long Leggings"):
-            long_leggings = 50
-            money = money - long_leggings
-            character = character + long_leggings
-            print("You have bought Long Leggings for $50")
-            time.sleep(3.4)
-            print("You have" + money + "money remaining")
-            time.sleep(3)
-            print("You now have" + character + "health")
-            time.sleep(3)
-        elif item== ("Big Boots"):
-            big_boots = 25
-            money = money - big_boots
-            character = character + big_boots
-            print("You have bought Bib Boots for $25")
-            time.sleep(3)
-            print("You have" + money + "money remaining")
-            time.sleep(3)
-            print("You now have" + character + "health")
-            time.sleep(3)
+        print("If you visit the shop but you don't want to buy anything, press enter without typing anything. The shop has a sturdy(75), copper(175), bronze(275), silver(375), gold(475), and enchanted helm(575). It has a sturdy(100), copper(200), bronze(300), silver(400), gold(500), and enchanted chestplate(600).. It has sturdy(50), copper(150), bronze(250), silver(350), gold(450), and enchanted leggins(550).. It has sturdy(25), copper(125), bronze(225), silver(325), gold(425), and enchanted boots(525)..")
+        time.sleep(28)
+        raw_input("You may buy 1 item at a time. What would you like to buy?")
+        time.sleep(2)
+        if raw_input== ("sturdy helm"):
+            if money >= 75:
+                helm = sturdy_helm
+                character = character + helm
+                money = money -helm
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("copper helm"):
+            if money >= 175:
+                helm = copper_helm
+                character = character + helm
+                money = money -helm
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("bronze helm"):
+            if money >= 275:    
+                helm = bronze_helm
+                character = character + helm
+                money = money -helm
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("silver helm"):
+            if money >= 375: 
+                helm = silver_helm
+                character = character + helm
+                money = money -helm
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("gold helm"):
+            if money >= 475:
+                helm = gold_helm
+                character = character + helm
+                money = money -helm
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("sturdy chestplate"):
+            if money >= 100:
+                chestplate = sturdy_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("copper chestplate"):
+            if money >= 200:
+                chestplate = copper_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("bronze chestplate"):
+            if money >= 300:
+                chestplate = bronze_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("silver chestplate"):
+            if money >= 400:
+                chestplate = sturdy_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("gold chestplate"):
+            if money >= 500:
+                chestplate = gold_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("enchanted chestplate"):
+            if money >= 600:
+                chestplate = enchanted_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("sturdy leggings"):
+            if money >= 50:
+                leggings = sturdy_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("copper leggings"):
+            if money >= 150:
+                leggings = copper_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("bronze leggings"):
+            if money >= 250:
+                leggings = bronze_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("silver leggings"):
+            if money >= 350:
+                leggings = silver_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("gold leggings"):
+            if money >= 450:
+                leggings = gold_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("enchanted leggings"):
+            if money >= 550:
+                leggings = enchanted_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("sturdy boots"):
+            if money >= 25:
+                boots = sturdy_boots
+                character = character + boots
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("copper boots"):
+            if money >= 125:
+                boots = copper_boots
+                character = character + boots
+                money = money -boots
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("bronze boots"):
+            if money >= 225:
+                boots = bronze_boots
+                character = character + boots
+                money = money -boots
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("silver boots"):
+            if money >= 325:
+                boots = silver_boots
+                character = character + boots
+                money = money -boots
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("gold boots"):
+            if money >= 425:
+                boots = gold_boots
+                character = character + boots
+                money = money -boots
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("enchanted boots"):
+            if money >= 525:
+                boots = enchanted_boots
+                character = character + boots
+                money = money -boots
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
         else:
             print("You have typed inccorectly, and will not get to use the shop this time")
+        
             time.sleep(3)
         print("Continuing journey...")
         time.sleep(2)
@@ -1560,7 +1745,7 @@ while (done3):
         time.sleep(3)
     else:
         print("You have typed inccorectly, and will not get to use the shop this time")
-        print("Continuing journey")
+        print("Continuing journey...")
     print("You return to the Hedge Maze")
     time.sleep(3)
     print("Lady Oriel says" + person + ", according to your evidence, it appears that farther up the alley there is a powerful wizard who is conjouring this magic. Defeat him and the pixies will be free")
@@ -3136,11 +3321,11 @@ while (done3):
                                                                 print("You have delt 320 dam, enemy health =")
                                                                 print enemy
                                                         else:
-                                                            print("You mistyped and your spell fizzled")
+      #This is here 4 no reason apparent eyyyyayyyy         print("You mistyped and your spell fizzled")
                                                             if enemy <= 0:
                                                                 print("You win!")
                                                                 done= False
-                                                                   break
+                                                                break
                                                             else:
                                                                 time.sleep(4)
                                                                 print("Lady Black Hope is starting her turn")
@@ -3159,17 +3344,268 @@ while (done3):
 done4= True
 while (done4):
     print("You have defeated Lady Black Hope")
+    time.sleep(3)
     print("As she shrinks into the void, you hear her say that you have no chance against Malistaires might")
+    time.sleep(4)
     print("Her energy feeds into you and you feel something change")
+    time.sleep(3.4)
     print("Your base health has now been icreased by 100 and you have been set back to MAX")
+    time.sleep(4)
     character = 775
-    if item== ("Sturdy Helm"):
+    print("You search her possesions and find 250 gold")
+    money = money + 250
+    time.sleep(3)
+    print("You now have" + money + "dollars")
+    time.sleep(2)
+    print("As the alley lights up again, a shop apears out from the darkness!")
+    time.sleep(4)
+    shop = raw_input("Would u like to travel to the shop(yes or no)")
+    time.sleep(2)
+    if shop== ("yes") or shop== ("y") or shop== ("Yes"):
+        print("Traveling to shop...")
+        time.sleep(3)
+        print("Your money =")
+        print money
+        time.sleep(2)
+        print("If you visit the shop but you don't want to buy anything, press enter without typing anything. The shop has a sturdy(75), copper(175), bronze(275), silver(375), gold(475), and enchanted helm(575). It has a sturdy(100), copper(200), bronze(300), silver(400), gold(500), and enchanted chestplate(600).. It has sturdy(50), copper(150), bronze(250), silver(350), gold(450), and enchanted leggins(550).. It has sturdy(25), copper(125), bronze(225), silver(325), gold(425), and enchanted boots(525)..")
+        time.sleep(28)
+        raw_input("You may buy 1 item at a time. What would you like to buy?")
+        time.sleep(2)
+        if raw_input== ("sturdy helm"):
+            if money >= 75:
+                helm = sturdy_helm
+                character = character + helm
+                money = money -helm
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("copper helm"):
+            if money >= 175:
+                helm = copper_helm
+                character = character + helm
+                money = money -helm
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("bronze helm"):
+            if money >= 275:    
+                helm = bronze_helm
+                character = character + helm
+                money = money -helm
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("silver helm"):
+            if money >= 375: 
+                helm = silver_helm
+                character = character + helm
+                money = money -helm
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("gold helm"):
+            if money >= 475:
+                helm = gold_helm
+                character = character + helm
+                money = money -helm
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("sturdy chestplate"):
+            if money >= 100:
+                chestplate = sturdy_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("copper chestplate"):
+            if money >= 200:
+                chestplate = copper_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("bronze chestplate"):
+            if money >= 300:
+                chestplate = bronze_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("silver chestplate"):
+            if money >= 400:
+                chestplate = sturdy_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("gold chestplate"):
+            if money >= 500:
+                chestplate = gold_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("enchanted chestplate"):
+            if money >= 600:
+                chestplate = enchanted_chestplate
+                character = character + chestplate
+                money = money -chestplate
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("sturdy leggings"):
+            if money >= 50:
+                leggings = sturdy_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("copper leggings"):
+            if money >= 150:
+                leggings = copper_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("bronze leggings"):
+            if money >= 250:
+                leggings = bronze_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("silver leggings"):
+            if money >= 350:
+                leggings = silver_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("gold leggings"):
+            if money >= 450:
+                leggings = gold_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("enchanted leggings"):
+            if money >= 550:
+                leggings = enchanted_leggings
+                character = character + leggings
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("sturdy boots"):
+            if money >= 25:
+                boots = sturdy_boots
+                character = character + boots
+                money = money -leggings
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("copper boots"):
+            if money >= 125:
+                boots = copper_boots
+                character = character + boots
+                money = money -boots
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("bronze boots"):
+            if money >= 225:
+                boots = bronze_boots
+                character = character + boots
+                money = money -boots
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("silver boots"):
+            if money >= 325:
+                boots = silver_boots
+                character = character + boots
+                money = money -boots
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("gold boots"):
+            if money >= 425:
+                boots = gold_boots
+                character = character + boots
+                money = money -boots
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        elif raw_input== ("enchanted boots"):
+            if money >= 525:
+                boots = enchanted_boots
+                character = character + boots
+                money = money -boots
+                print("You now have" + character + "health")
+                print("You also have" + money + "dollars remaining")
+            else:
+                print("You do not have enough money to purchase this item. The vendors have chased you out.")
+        else:
+            print("You have typed inccorectly, and will not get to use the shop this time")
         
-    elif item== ("Sturdy Chestplate"):
-        character = character + sturdy_chestplate
-    elif item== ("Long Leggings"):
-        character = character + long_leggings
-    elif item== ("Big Boots"):
-        character = character + big_boots
+            time.sleep(3)
+        print("Continuing journey...")
+        time.sleep(2)
+    elif shop== ("no") or shop== ("n") or shop== ("No"):
+        print("Continuing journey...")
+        time.sleep(3)
     else:
-    print("You now have " + character + "health")
+        print("You have typed inccorectly, and will not get to use the shop this time")
+        print("Continuing journey")
+    
+    
+                                                    
+                                                                                    #before every battle you have to do the following bellow... 
+                                                                                    #It just makes sure the character's health doesnt have glitches and makes sure they actually get the items they bought
+                                                                                    
+    character = 700 #or whatever the character's base health is at the time (dont add in the free helm, it will come)
+    def character_health(set):
+        set = set + helm
+        set = set + chestplate 
+        set = set + leggings
+        set = set + boots  
+        
+    character = character + helm
+    character = character + chestplate
+    character = character + leggings
+    character = character + boots 
+        #start the battle now... 
+    
