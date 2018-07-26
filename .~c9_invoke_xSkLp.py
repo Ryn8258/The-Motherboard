@@ -1458,6 +1458,9 @@ while (done3):
     sturdy_helm = 75
     helm = sturdy_helm
     character = character + helm
+    chestplate = 0
+    leggings = 0
+    boots = 0
     print("Your character now has" + character + "health")
     time.sleep(3.7)
     print("You continue on down the alley, to the Hedge Maze, in Unicorn Way")
@@ -1488,7 +1491,7 @@ while (done3):
     enchanted_chestplate = 600
     sturdy_leggings =  50
     copper_leggings = 150
-    bronze_leggings = 250
+    enchanted_l
     silver_leggings = 350
     gold_leggings = 450
     enchanted_leggings = 550

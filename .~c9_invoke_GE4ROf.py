@@ -1457,7 +1457,10 @@ while (done3):
     character = 600                                                                                                                #change this number to whatever the health was before the last battle, i think it was 600
     sturdy_helm = 75
     helm = sturdy_helm
-    character = character + helm
+    st
+    chestplate = 0
+    leggings = 0
+    boots = 0
     print("Your character now has" + character + "health")
     time.sleep(3.7)
     print("You continue on down the alley, to the Hedge Maze, in Unicorn Way")

@@ -1458,6 +1458,9 @@ while (done3):
     sturdy_helm = 75
     helm = sturdy_helm
     character = character + helm
+    chestplate = 0
+    leggings = 0
+    boots = 0
     print("Your character now has" + character + "health")
     time.sleep(3.7)
     print("You continue on down the alley, to the Hedge Maze, in Unicorn Way")

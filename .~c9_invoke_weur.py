@@ -1458,6 +1458,9 @@ while (done3):
     sturdy_helm = 75
     helm = sturdy_helm
     character = character + helm
+    chestplate = 0
+    leggings = 0
+    boots = 0
     print("Your character now has" + character + "health")
     time.sleep(3.7)
     print("You continue on down the alley, to the Hedge Maze, in Unicorn Way")
@@ -1499,7 +1502,7 @@ while (done3):
     gold_boots = 425
     enchanted_boots = 525
     print("She takes the paper and performs some magic")
-    time.sleep(3)
+            chestplate = ""
     print("Lady Oriel hands you the spell, it is a pixie, which will heal you for 350 health. But you can only use it once per battle.")
     pixie = 1
     time.sleep(4.5)

@@ -1458,6 +1458,9 @@ while (done3):
     sturdy_helm = 75
     helm = sturdy_helm
     character = character + helm
+    chestplate = 0
+    leggings = 0
+    boots = 0
     print("Your character now has" + character + "health")
     time.sleep(3.7)
     print("You continue on down the alley, to the Hedge Maze, in Unicorn Way")
@@ -1473,7 +1476,7 @@ while (done3):
     print("You return to Lady Oriel and tell her what you discovered, you also show her the gold coin, and paper")
     time.sleep(6)
     print("Lady Oriel tells you that the coin is worth one hundred dollars in the market, and she says that paper can be made into a healing spell")
-    time.sleep(9)
+    br
     money = 100
     copper_helm = 175
     bronze_helm = 275
