@@ -1,3 +1,4 @@
+    
     print("Your turn is starting")                                                                                                  #turn 2 battle 3
     time.sleep(2)
     if wizard== "Fire" or wizard== "fire":
@@ -22,19 +23,40 @@
     else:
         print("You have used your pixie")
     if wizard== "Fire" or wizard== "fire":
-        if 
+        if sun_bird <= 1:
+            print("You have" + sun_bird / 2 + "sunbirds left")
+        else:
+            print("You have no sunbirds left")
     elif wizard== "Ice" or wizard== "ice":
-        print("You have ice shard, frost beetle, and snow serpent in your spell deck")
+        if evil_snowman <= 1:
+            print("You have" + evil_snowman / 2 + "evil snowmans left")
+        else:
+            print("You have no evil snowmans left")
     elif wizard== "Life" or wizard== "life":
-        print("You have life beam, imp, and leprechaun in your spell deck")
+        if seraph <= 1:
+            print("You have" + seraph / 2 + "seraphs left")
+        else:
+            print("You have no seraphs left")
     elif wizard== "Death" or wizard== "death":
-        print("You have death blast, dark pixie, and ghoul your spell deck")
+        if banshee <= 1:
+            print("You have" + banshee / 2 + "banshees left")
+        else:
+            print("You have no banshees left")
     elif wizard== "Myth" or wizard== "myth":
-        print("You have myth blast, blood bat, and troll in your spell deck")
+        if cyclops <= 1:
+            print("You have" + cyclops / 2 + "cyclops's left")
+        else:
+            print("You have no cyclops's left")
     elif wizard== "Storm" or wizard== "storm":
-        print("You have lightning spark, storm snake, and lightning bat in your spell deck")
+        if storm_shark <= 1:
+            print("You have" + storm_shark / 2 + "storm sharks left")
+        else:
+            print("You have no storm sharks left")
     elif wizard== "Balance" or wizard== "balance":
-        print("You have balance beam, scarab, and scorpion in your spell deck")
+        if sandstorm <= 1:
+            print("You have" + sandstorm / 2 + "sandstorms left")
+        else:
+            print("You have no sandstorms left")
     else:
         print("Because you picked an invalid class you cannot continue the game, please reload the page")l
     spell= raw_input("Enter your spell (please use only lowercase):")
@@ -92,7 +114,7 @@
         print ("You have delt 100 dam to the enemy. Enemy health =")
         print enemy
     elif spell== "evil snowman":
-        if evil_snowman <= 0:
+        if evil_snowman <= 1:
             print("sorry you are out of evil snowman and you have fizzled")
         else:
             enemy = enemy -290
@@ -108,7 +130,7 @@
             print("You have delt 340 dam, enemy health =")
             print enemy
     elif spell== "sandstorm":
-        if sandstorm <= 0:
+        if sandstorm <= 1:
             print("sorry you are out of evil snowman and you have fizzled")
         else:
             enemy = enemy -290
@@ -116,7 +138,7 @@
             print("You have delt 290 dam, enemy health =")
             print enemy
     elif spell== "banshee":
-        if banshee <= 0:
+        if banshee <= 1:
             print("sorry you are out of banshees and have fizzled")
         else:
             enemy = enemy - 290
@@ -124,7 +146,7 @@
             print("You have delt 290 dam, your enemy =")
             print enemy
     elif spell== "seraph":
-        if seraph <= 0:
+        if seraph <= 1:
             print("sorry you are out of seraphs and you have fizzled")
         else:
             enemy = enemy - 290
@@ -132,7 +154,7 @@
             print("You have delt 290 dam, enemy health =")
             print enemy
     elif spell== "storm shark":
-        if storm_shark <= 0:
+        if storm_shark <= 1:
             print("sorry you are out of storm sharks and have fizzled")
         else:
             enemy = enemy - 380
@@ -140,7 +162,7 @@
             print("You have delt 380 dam, your enemy =")
             print enemy
     elif spell== "cyclops":
-        if cyclops <= 0:
+        if cyclops <= 1:
             print("sorry you are out of cyclops' and you have fizzled")
         else:
             enemy = enemy - 320
