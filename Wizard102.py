@@ -1644,48 +1644,78 @@ while (done3):
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("copper chestplate"):
-            if money >= 200:
-                chestplate = copper_chestplate
-                character = character + chestplate
-                money = money -chestplate
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+            if money >= 100:
+                if chestplate== 200:
+                    print("You already own this item, and will not get to purchase this time")
+                elif chesplate >= 200:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - chestplate
+                    chestplate = copper_chestplate
+                    character = character + chestplate
+                    money = money - chestplate
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("bronze chestplate"):
             if money >= 300:
-                chestplate = bronze_chestplate
-                character = character + chestplate
-                money = money -chestplate
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if chestplate== 300:
+                    print("You already own this item, and will not get to purchase this time")
+                elif chesplate >= 300:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - chestplate
+                    chestplate = bronze_chestplate
+                    character = character + chestplate
+                    money = money - chestplate
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("silver chestplate"):
             if money >= 400:
-                chestplate = sturdy_chestplate
-                character = character + chestplate
-                money = money -chestplate
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if chestplate== 400:
+                    print("You already own this item, and will not get to purchase this time")
+                elif chesplate >= 400:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - chestplate
+                    chestplate = silver_chestplate
+                    character = character + chestplate
+                    money = money - chestplate
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("gold chestplate"):
             if money >= 500:
-                chestplate = gold_chestplate
-                character = character + chestplate
-                money = money -chestplate
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if chestplate== 500:
+                    print("You already own this item, and will not get to purchase this time")
+                elif chesplate >= 500:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - chestplate
+                    chestplate = gold_chestplate
+                    character = character + chestplate
+                    money = money - chestplate
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("enchanted chestplate"):
             if money >= 600:
-                chestplate = enchanted_chestplate
-                character = character + chestplate
-                money = money -chestplate
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if chestplate== 600:
+                    print("You already own this item, and will not get to purchase this time")
+                elif chesplate >= 600:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - chestplate
+                    chestplate = enchanted_chestplate
+                    character = character + chestplate
+                    money = money - chestplate
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("sturdy leggings"):
