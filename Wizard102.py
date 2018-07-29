@@ -407,65 +407,122 @@ while (done):
                     print("You have balance beam, and scarab in your spell deck")
                 else:
                     print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                time.sleep(2)
+                spell= raw_input("Enter your spell (please use only lowercase):")
+                time.sleep(2)
+                if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+                    enemy = enemy - 60
+                    print ("You have delt 60 dam to the enemy. Enemy health =")
+                    print enemy
+                elif spell== "storm snake":
+                    enemy = enemy -130
+                    print ("You have delt 130 dam to the enemy. Enemy health =")
+                    print enemy
+                elif spell== "fire cat": 
+                    enemy = enemy -120
+                    print ("You have delt 120 dam to the enemy. Enemy health =")
+                    print enemy
+                elif spell== "blood bat":
+                    enemy = enemy -110
+                    print ("You have delt 110 dam to the enemy. Enemy health =")
+                    print enemy
+                elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                    enemy = enemy - 100
+                    print ("You have delt 100 dam to the enemy. Enemy health =")
+                    print enemy
+                else:
+                    print("You mistyped and your spell fizzled")
+                if enemy <= 0:
                     time.sleep(2)
-                    spell= raw_input("Enter your spell (please use only lowercase):")
+                    print("You win!")
+                    done= False
+                    break
+                else:
+                    time.sleep(3)
+                    print("Malistaire's minion is starting it's turn")
                     time.sleep(2)
-                    if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                        enemy = enemy - 60
-                        print ("You have delt 60 dam to the enemy. Enemy health =")
-                        print enemy
-                    elif spell== "storm snake":
-                        enemy = enemy -130
-                        print ("You have delt 130 dam to the enemy. Enemy health =")
-                        print enemy
-                    elif spell== "fire cat": 
-                        enemy = enemy -120
-                        print ("You have delt 120 dam to the enemy. Enemy health =")
-                        print enemy
-                    elif spell== "blood bat":
-                        enemy = enemy -110
-                        print ("You have delt 110 dam to the enemy. Enemy health =")
-                        print enemy
-                    elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                        enemy = enemy - 100
-                        print ("You have delt 100 dam to the enemy. Enemy health =")
-                        print enemy
+                    print("Malistaire's minion uses dark pixie and deals 100 dam.")
+                    time.sleep(3)
+                    character = character -100
+                    print("Your health=")
+                    print character
+                    time.sleep(3)
+                    print("You are starting your turn")
+                    time.sleep(3)
+                    if wizard== "Fire" or wizard== "fire":
+                        print("You have flame spark, and fire cat in your spell deck")
+                    elif wizard== "Ice" or wizard== "ice":
+                        print("You have ice shard, and frost beetle in your spell deck")
+                    elif wizard== "Life" or wizard== "life":
+                        print("You have life beam, and imp in your spell deck")
+                    elif wizard== "Death" or wizard== "death":
+                        print("You have death blast, and dark pixie in your spell deck")
+                    elif wizard== "Myth" or wizard== "myth":
+                        print("You have myth blast, and blood bat in your spell deck")
+                    elif wizard== "Storm" or wizard== "storm":
+                        print("You have lightning spark, and storm snake in your spell deck")
+                    elif wizard== "Balance" or wizard== "balance":
+                        print("You have balance beam, and scarab in your spell deck")
                     else:
-                        print("You mistyped and your spell fizzled")
-                    if enemy <= 0:
+                        print("Because you picked an invalid class you cannot continue the game, please reload the page")
                         time.sleep(2)
-                        print("You win!")
-                        done= False
-                        break
-                    else:
-                        time.sleep(3)
-                        print("Malistaire's minion is starting it's turn")
+                        spell= raw_input("Enter your spell (please use only lowercase):")
                         time.sleep(2)
-                        print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                        time.sleep(3)
-                        character = character -100
-                        print("Your health=")
-                        print character
-                        time.sleep(3)
-                        print("You are starting your turn")
-                        time.sleep(3)
-                        if wizard== "Fire" or wizard== "fire":
-                            print("You have flame spark, and fire cat in your spell deck")
-                        elif wizard== "Ice" or wizard== "ice":
-                            print("You have ice shard, and frost beetle in your spell deck")
-                        elif wizard== "Life" or wizard== "life":
-                            print("You have life beam, and imp in your spell deck")
-                        elif wizard== "Death" or wizard== "death":
-                            print("You have death blast, and dark pixie in your spell deck")
-                        elif wizard== "Myth" or wizard== "myth":
-                            print("You have myth blast, and blood bat in your spell deck")
-                        elif wizard== "Storm" or wizard== "storm":
-                            print("You have lightning spark, and storm snake in your spell deck")
-                        elif wizard== "Balance" or wizard== "balance":
-                            print("You have balance beam, and scarab in your spell deck")
+                        if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+                            enemy = enemy - 60
+                            print ("You have delt 60 dam to the enemy. Enemy health =")
+                            print enemy
+                        elif spell== "storm snake":
+                            enemy = enemy -130
+                            print ("You have delt 130 dam to the enemy. Enemy health =")
+                            print enemy
+                        elif spell== "fire cat": 
+                            enemy = enemy -120
+                            print ("You have delt 120 dam to the enemy. Enemy health =")
+                            print enemy
+                        elif spell== "blood bat":
+                            enemy = enemy -110
+                            print ("You have delt 110 dam to the enemy. Enemy health =")
+                            print enemy
+                        elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                            enemy = enemy - 100
+                            print ("You have delt 100 dam to the enemy. Enemy health =")
+                            print enemy
                         else:
-                            print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                            print("You mistyped and your spell fizzled")
+                        if enemy <= 0:
+                            print("You win!")
+                            done= False
+                            break
+                        else:
+                            time.sleep(3)
+                            print("Malistaire's minion is starting it's turn")
                             time.sleep(2)
+                            print("Malistaire's minion uses dark pixie and deals 100 dam.")
+                            character = character - 100
+                            time.sleep(3)
+                            print("Your health=")
+                            print character
+                            time.sleep(3)
+                            print "You are starting your turn"
+                            time.sleep(2)
+                            if wizard== "Fire" or wizard== "fire":
+                                print("You have flame spark, and fire cat in your spell deck")
+                            elif wizard== "Ice" or wizard== "ice":
+                                print("You have ice shard, and frost beetle in your spell deck")
+                            elif wizard== "Life" or wizard== "life":
+                                print("You have life beam, and imp in your spell deck")
+                            elif wizard== "Death" or wizard== "death":
+                                print("You have death blast, and dark pixie in your spell deck")
+                            elif wizard== "Myth" or wizard== "myth":
+                                print("You have myth blast, and blood bat in your spell deck")
+                            elif wizard== "Storm" or wizard== "storm":
+                                print("You have lightning spark, and storm snake in your spell deck")
+                            elif wizard== "Balance" or wizard== "balance":
+                                print("You have balance beam, and scarab in your spell deck")
+                            else:
+                                print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                            time.sleep(3)
                             spell= raw_input("Enter your spell (please use only lowercase):")
                             time.sleep(2)
                             if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
@@ -491,20 +548,20 @@ while (done):
                             else:
                                 print("You mistyped and your spell fizzled")
                             if enemy <= 0:
-                                print("You win!")
-                                done= False
+                                print("You win!")                                    
+                                done= False    
                                 break
                             else:
                                 time.sleep(3)
                                 print("Malistaire's minion is starting it's turn")
                                 time.sleep(2)
                                 print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                                character = character - 100
                                 time.sleep(3)
+                                character = character -100
                                 print("Your health=")
                                 print character
                                 time.sleep(3)
-                                print "You are starting your turn"
+                                print("You are starting your turn")
                                 time.sleep(2)
                                 if wizard== "Fire" or wizard== "fire":
                                     print("You have flame spark, and fire cat in your spell deck")
@@ -522,9 +579,64 @@ while (done):
                                     print("You have balance beam, and scarab in your spell deck")
                                 else:
                                     print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                                time.sleep(3)
+                                spell= raw_input("Enter your spell (please use only lowercase):")
+                                time.sleep(2)
+                                if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+                                    enemy = enemy - 60
+                                    print ("You have delt 60 dam to the enemy. Enemy health =")
+                                    print enemy
+                                elif spell== "storm snake":
+                                    enemy = enemy -130
+                                    print ("You have delt 130 dam to the enemy. Enemy health =")
+                                    print enemy
+                                elif spell== "fire cat": 
+                                    enemy = enemy -120
+                                    print ("You have delt 120 dam to the enemy. Enemy health =")
+                                    print enemy
+                                elif spell== "blood bat":
+                                    enemy = enemy -110
+                                    print ("You have delt 110 dam to the enemy. Enemy health =")
+                                    print enemy
+                                elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                                    enemy = enemy - 100
+                                    print ("You have delt 100 dam to the enemy. Enemy health =")
+                                    print enemy
+                                else:
+                                    print("You mistyped and your spell fizzled")
+                                if enemy <= 0:
+                                    print("You win!")
+                                    done= False
+                                    break
+                                else:
                                     time.sleep(3)
-                                    spell= raw_input("Enter your spell (please use only lowercase):")
+                                    print("Malistaire's minion is starting his turn")
                                     time.sleep(2)
+                                    print("Malistaire's minion uses dark pixie and deals 100 dam.")
+                                    character = character - 100
+                                    time.sleep(3)
+                                    print("Your health=")
+                                    print character
+                                    time.sleep(3)
+                                    print "You are starting your turn"
+                                    time.sleep(2)
+                                    if wizard== "Fire" or wizard== "fire":
+                                        print("You have flame spark, and fire cat in your spell deck")
+                                    elif wizard== "Ice" or wizard== "ice":
+                                        print("You have ice shard, and frost beetle in your spell deck")
+                                    elif wizard== "Life" or wizard== "life":
+                                        print("You have life beam, and imp in your spell deck")
+                                    elif wizard== "Death" or wizard== "death":
+                                        print("You have death blast, and dark pixie in your spell deck")
+                                    elif wizard== "Myth" or wizard== "myth":
+                                        print("You have myth blast, and blood bat in your spell deck")
+                                    elif wizard== "Storm" or wizard== "storm":
+                                        print("You have lightning spark, and storm snake in your spell deck")
+                                    elif wizard== "Balance" or wizard== "balance":
+                                        print("You have balance beam, and scarab in your spell deck")
+                                    else:
+                                        print("Because you picked an invalid class you cannot continue the game, please reload the page")
+                                        spell= raw_input("Enter your spell (please use only lowercase):")
                                     if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
                                         enemy = enemy - 60
                                         print ("You have delt 60 dam to the enemy. Enemy health =")
@@ -549,15 +661,15 @@ while (done):
                                         print("You mistyped and your spell fizzled")
                                     if enemy <= 0:
                                         print("You win!")
-                                        done= False    
+                                        done= False
                                         break
                                     else:
                                         time.sleep(3)
                                         print("Malistaire's minion is starting it's turn")
                                         time.sleep(2)
                                         print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                                        time.sleep(3)
                                         character = character -100
+                                        time.sleep(3)
                                         print("Your health=")
                                         print character
                                         time.sleep(3)
@@ -579,64 +691,9 @@ while (done):
                                             print("You have balance beam, and scarab in your spell deck")
                                         else:
                                             print("Because you picked an invalid class you cannot continue the game, please reload the page")
-                                        time.sleep(3)
-                                        spell= raw_input("Enter your spell (please use only lowercase):")
-                                        time.sleep(2)
-                                        if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                                            enemy = enemy - 60
-                                            print ("You have delt 60 dam to the enemy. Enemy health =")
-                                            print enemy
-                                        elif spell== "storm snake":
-                                            enemy = enemy -130
-                                            print ("You have delt 130 dam to the enemy. Enemy health =")
-                                            print enemy
-                                        elif spell== "fire cat": 
-                                            enemy = enemy -120
-                                            print ("You have delt 120 dam to the enemy. Enemy health =")
-                                            print enemy
-                                        elif spell== "blood bat":
-                                            enemy = enemy -110
-                                            print ("You have delt 110 dam to the enemy. Enemy health =")
-                                            print enemy
-                                        elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                                            enemy = enemy - 100
-                                            print ("You have delt 100 dam to the enemy. Enemy health =")
-                                            print enemy
-                                        else:
-                                            print("You mistyped and your spell fizzled")
-                                        if enemy <= 0:
-                                            print("You win!")
-                                            done= False
-                                            break
-                                        else:
                                             time.sleep(3)
-                                            print("Malistaire's minion is starting his turn")
+                                            spell= raw_input("Enter your spell (please use only lowercase):")
                                             time.sleep(2)
-                                            print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                                            character = character - 100
-                                            time.sleep(3)
-                                            print("Your health=")
-                                            print character
-                                            time.sleep(3)
-                                            print "You are starting your turn"
-                                            time.sleep(2)
-                                            if wizard== "Fire" or wizard== "fire":
-                                                print("You have flame spark, and fire cat in your spell deck")
-                                            elif wizard== "Ice" or wizard== "ice":
-                                                print("You have ice shard, and frost beetle in your spell deck")
-                                            elif wizard== "Life" or wizard== "life":
-                                                print("You have life beam, and imp in your spell deck")
-                                            elif wizard== "Death" or wizard== "death":
-                                                print("You have death blast, and dark pixie in your spell deck")
-                                            elif wizard== "Myth" or wizard== "myth":
-                                                print("You have myth blast, and blood bat in your spell deck")
-                                            elif wizard== "Storm" or wizard== "storm":
-                                                print("You have lightning spark, and storm snake in your spell deck")
-                                            elif wizard== "Balance" or wizard== "balance":
-                                                print("You have balance beam, and scarab in your spell deck")
-                                            else:
-                                                print("Because you picked an invalid class you cannot continue the game, please reload the page")
-                                                spell= raw_input("Enter your spell (please use only lowercase):")
                                             if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
                                                 enemy = enemy - 60
                                                 print ("You have delt 60 dam to the enemy. Enemy health =")
@@ -668,12 +725,12 @@ while (done):
                                                 print("Malistaire's minion is starting it's turn")
                                                 time.sleep(2)
                                                 print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                                                character = character -100
+                                                character = character - 100
                                                 time.sleep(3)
                                                 print("Your health=")
                                                 print character
                                                 time.sleep(3)
-                                                print("You are starting your turn")
+                                                print "You are starting your turn"
                                                 time.sleep(2)
                                                 if wizard== "Fire" or wizard== "fire":
                                                     print("You have flame spark, and fire cat in your spell deck")
@@ -694,89 +751,32 @@ while (done):
                                                     time.sleep(3)
                                                     spell= raw_input("Enter your spell (please use only lowercase):")
                                                     time.sleep(2)
-                                                    if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                                                        enemy = enemy - 60
-                                                        print ("You have delt 60 dam to the enemy. Enemy health =")
-                                                        print enemy
-                                                    elif spell== "storm snake":
-                                                        enemy = enemy -130
-                                                        print ("You have delt 130 dam to the enemy. Enemy health =")
-                                                        print enemy
-                                                    elif spell== "fire cat": 
-                                                        enemy = enemy -120
-                                                        print ("You have delt 120 dam to the enemy. Enemy health =")
-                                                        print enemy
-                                                    elif spell== "blood bat":
-                                                        enemy = enemy -110
-                                                        print ("You have delt 110 dam to the enemy. Enemy health =")
-                                                        print enemy
-                                                    elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                                                        enemy = enemy - 100
-                                                        print ("You have delt 100 dam to the enemy. Enemy health =")
-                                                        print enemy
-                                                    else:
-                                                        print("You mistyped and your spell fizzled")
-                                                    if enemy <= 0:
-                                                        print("You win!")
-                                                        done= False
-                                                        break
-                                                    else:
-                                                        time.sleep(3)
-                                                        print("Malistaire's minion is starting it's turn")
-                                                        time.sleep(2)
-                                                        print("Malistaire's minion uses dark pixie and deals 100 dam.")
-                                                        character = character - 100
-                                                        time.sleep(3)
-                                                        print("Your health=")
-                                                        print character
-                                                        time.sleep(3)
-                                                        print "You are starting your turn"
-                                                        time.sleep(2)
-                                                        if wizard== "Fire" or wizard== "fire":
-                                                            print("You have flame spark, and fire cat in your spell deck")
-                                                        elif wizard== "Ice" or wizard== "ice":
-                                                            print("You have ice shard, and frost beetle in your spell deck")
-                                                        elif wizard== "Life" or wizard== "life":
-                                                            print("You have life beam, and imp in your spell deck")
-                                                        elif wizard== "Death" or wizard== "death":
-                                                            print("You have death blast, and dark pixie in your spell deck")
-                                                        elif wizard== "Myth" or wizard== "myth":
-                                                            print("You have myth blast, and blood bat in your spell deck")
-                                                        elif wizard== "Storm" or wizard== "storm":
-                                                            print("You have lightning spark, and storm snake in your spell deck")
-                                                        elif wizard== "Balance" or wizard== "balance":
-                                                            print("You have balance beam, and scarab in your spell deck")
-                                                        else:
-                                                            print("Because you picked an invalid class you cannot continue the game, please reload the page")
-                                                            time.sleep(3)
-                                                            spell= raw_input("Enter your spell (please use only lowercase):")
-                                                            time.sleep(2)
-                                                            if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
-                                                                enemy = enemy - 60
-                                                                print ("You have delt 60 dam to the enemy. Enemy health =")
-                                                                print enemy
-                                                            elif spell== "storm snake":
-                                                                enemy = enemy -130
-                                                                print ("You have delt 130 dam to the enemy. Enemy health =")
-                                                                print enemy
-                                                            elif spell== "fire cat": 
-                                                                enemy = enemy -120
-                                                                print ("You have delt 120 dam to the enemy. Enemy health =")
-                                                                print enemy
-                                                            elif spell== "blood bat":
-                                                                enemy = enemy -110
-                                                                print ("You have delt 110 dam to the enemy. Enemy health =")
-                                                                print enemy
-                                                            elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
-                                                                enemy = enemy - 100
-                                                                print ("You have delt 100 dam to the enemy. Enemy health =")
-                                                                print enemy
-                                                            else:
-                                                                print("You mistyped and your spell fizzled")
-                                                            if enemy <= 0:
-                                                                print("You win!")
-                                                                done= False
-                                                                break
+                                                if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+                                                    enemy = enemy - 60
+                                                    print ("You have delt 60 dam to the enemy. Enemy health =")
+                                                    print enemy
+                                                elif spell== "storm snake":
+                                                    enemy = enemy -130
+                                                    print ("You have delt 130 dam to the enemy. Enemy health =")
+                                                    print enemy
+                                                elif spell== "fire cat": 
+                                                    enemy = enemy -120
+                                                    print ("You have delt 120 dam to the enemy. Enemy health =")
+                                                    print enemy
+                                                elif spell== "blood bat":
+                                                    enemy = enemy -110
+                                                    print ("You have delt 110 dam to the enemy. Enemy health =")
+                                                    print enemy
+                                                elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+                                                    enemy = enemy - 100
+                                                    print ("You have delt 100 dam to the enemy. Enemy health =")
+                                                    print enemy
+                                                else:
+                                                    print("You mistyped and your spell fizzled")
+                                                if enemy <= 0:
+                                                    print("You win!")
+                                                    done= False
+                                                    break
 done2= True
 while (done2):
     time.sleep(3)
@@ -1520,7 +1520,7 @@ while (done3):
     print("She takes the paper and performs some magic")
     time.sleep(3)
     print("Lady Oriel hands you the spell, it is a pixie, which will heal you for 350 health. But you can only use it once per battle.")
-    pixie = 1
+    pixie = 2
     time.sleep(4.5)
     print("For your good work, Lady Oriel advises you to visit the shop")
     time.sleep(4)
@@ -1720,110 +1720,182 @@ while (done3):
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("sturdy leggings"):
             if money >= 50:
-                leggings = sturdy_leggings
-                character = character + leggings
-                money = money -leggings
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if leggings== 50:
+                    print("You already own this item, and will not get to purchase this time")
+                elif leggings >= 50:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - leggings
+                    leggings = sturdy_leggings
+                    character = character + leggings
+                    money = money - leggings
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("copper leggings"):
             if money >= 150:
-                leggings = copper_leggings
-                character = character + leggings
-                money = money -leggings
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if leggings== 150:
+                    print("You already own this item, and will not get to purchase this time")
+                elif leggings >= 150:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - leggings
+                    leggings = copper_leggings
+                    character = character + leggings
+                    money = money - leggings
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("bronze leggings"):
             if money >= 250:
-                leggings = bronze_leggings
-                character = character + leggings
-                money = money -leggings
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if leggings== 250:
+                    print("You already own this item, and will not get to purchase this time")
+                elif leggings >= 250:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - leggings
+                    leggings = bronze_leggings
+                    character = character + leggings
+                    money = money - leggings
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("silver leggings"):
             if money >= 350:
-                leggings = silver_leggings
-                character = character + leggings
-                money = money -leggings
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if leggings== 350:
+                    print("You already own this item, and will not get to purchase this time")
+                elif leggings >= 350:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - leggings
+                    leggings = silver_leggings
+                    character = character + chestplate
+                    money = money - leggings
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("gold leggings"):
             if money >= 450:
-                leggings = gold_leggings
-                character = character + leggings
-                money = money -leggings
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if leggings== 450:
+                    print("You already own this item, and will not get to purchase this time")
+                elif leggings >= 450:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - leggings
+                    leggings = gold_leggings
+                    character = character + chestplate
+                    money = money - leggings
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("enchanted leggings"):
             if money >= 550:
-                leggings = enchanted_leggings
-                character = character + leggings
-                money = money -leggings
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if leggings== 550:
+                    print("You already own this item, and will not get to purchase this time")
+                elif leggings >= 550:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - leggings
+                    leggings = enchanted_leggings
+                    character = character + leggings
+                    money = money - leggings
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("sturdy boots"):
             if money >= 25:
-                boots = sturdy_boots
-                character = character + boots
-                money = money -leggings
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if boots== 25:
+                    print("You already own this item, and will not get to purchase this time")
+                elif boots >= 25:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - boots
+                    boots = sturdy_boots
+                    character = character + boots
+                    money = money - boots
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("copper boots"):
             if money >= 125:
-                boots = copper_boots
-                character = character + boots
-                money = money -boots
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if boots== 125:
+                    print("You already own this item, and will not get to purchase this time")
+                elif boots >= 125:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - boots
+                    boots = copper_boots
+                    character = character + boots
+                    money = money - boots
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("bronze boots"):
             if money >= 225:
-                boots = bronze_boots
-                character = character + boots
-                money = money -boots
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if boots== 225:
+                    print("You already own this item, and will not get to purchase this time")
+                elif boots >= 225:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - boots
+                    boots = bronze_boots
+                    character = character + boots
+                    money = money - boots
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("silver boots"):
             if money >= 325:
-                boots = silver_boots
-                character = character + boots
-                money = money -boots
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if boots== 325:
+                    print("You already own this item, and will not get to purchase this time")
+                elif boots >= 325:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - boots
+                    boots = silver_boots
+                    character = character + boots
+                    money = money - boots
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("gold boots"):
             if money >= 425:
-                boots = gold_boots
-                character = character + boots
-                money = money -boots
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if boots== 425:
+                    print("You already own this item, and will not get to purchase this time")
+                elif boots >= 425:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - boots
+                    boots = gold_boots
+                    character = character + boots
+                    money = money - boots
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         elif raw_input== ("enchanted boots"):
             if money >= 525:
-                boots = enchanted_boots
-                character = character + boots
-                money = money -boots
-                print("You now have" + character + "health")
-                print("You also have" + money + "dollars remaining")
+                if boots== 525:
+                    print("You already own this item, and will not get to purchase this time")
+                elif boots >= 525:
+                    print("You own a better item, and will not get to purchase this time")
+                else:
+                    character = character - boots
+                    boots = enchanted_boots
+                    character = character + boots
+                    money = money - boots
+                    print("You now have" + character + "health")
+                    print("You also have" + money + "dollars remaining")
             else:
                 print("You do not have enough money to purchase this item. The vendors have chased you out.")
         else:
@@ -1908,8 +1980,8 @@ while (done3):
     else:
         print("Because you picked an invalid class you cannot continue the game, please reload the page")
     time.sleep(4)
-    if pixie >= 0:
-        print("you have" + pixie + "pixies")
+    if pixie >= 1:
+        print("you have" + pixie / 2 + "pixies")
     else:
         print("You have used your pixie")
     spell= raw_input("Enter your spell (please use only lowercase):")
@@ -2275,19 +2347,19 @@ while (done3):
     print("Your turn is starting")                                                                                                  #turn 6 battle 3
     time.sleep(2)
     if wizard== "Fire" or wizard== "fire":
-        print("You have flame spark, fire cat, fire elf, and sun bird in your spell deck")
+        print("You have flame spark, fire cat, and fire elf in your spell deck")
     elif wizard== "Ice" or wizard== "ice":
-        print("You have ice shard, frost beetle, snow serpent, and evil snowman in your spell deck")
+        print("You have ice shard, frost beetle, and snow serpent in your spell deck")
     elif wizard== "Life" or wizard== "life":
-        print("You have life beam, imp, leprechaun, and seraph in your spell deck")
+        print("You have life beam, imp, and leprechaun in your spell deck")
     elif wizard== "Death" or wizard== "death":
-        print("You have death blast, dark pixie, ghoul, and banshee your spell deck")
+        print("You have death blast, dark pixie, and ghoul in your spell deck")
     elif wizard== "Myth" or wizard== "myth":
-        print("You have myth blast, blood bat, troll, and cyclops in your spell deck")
+        print("You have myth blast, blood bat, and troll in your spell deck")
     elif wizard== "Storm" or wizard== "storm":
-        print("You have lightning spark, storm snake, lightning bat, and storm shark in your spell deck")
+        print("You have lightning spark, storm snake, and lightning bat in your spell deck")
     elif wizard== "Balance" or wizard== "balance":
-        print("You have balance beam, scarab, scorpion, sandstorm in your spell deck")
+        print("You have balance beam, scarab, and scorpionin your spell deck")                      #we need to delete all the rank 4 spells from here down because we have different text to tell the person if they have them
     else:
         print("Because you picked an invalid class you cannot continue the game, please reload the page")
     time.sleep(4)
@@ -3435,26 +3507,31 @@ while (done3):
                                                                     break
 done4= True
 while (done4):
+    character = 700
+    character = character + helm
+    character = character + chestplate
+    character = character + leggings
+    character = character + boots 
     print("You have defeated Lady Black Hope")
     time.sleep(3)
-    print("As she shrinks into the void, you hear her say that you have no chance against Malistaires might")
+    print("As she shrinks into the void, you hear her say that you have no chance against Malistaire's might")
     time.sleep(4)
-    print("Her energy feeds into you and you feel something change")
+    print("Her energy feeds into you, and you feel something change")
     time.sleep(3.4)
     print("Your base health has now been icreased by 100 and you have been set back to MAX")
     time.sleep(4)
-    character = 775
     print("You search her possesions and find 250 gold")
     money = money + 250
     time.sleep(3)
-    print("You now have" + money + "dollars")
+    print("Your money =")
+    print money
     time.sleep(2)
     print("As the alley lights up again, a shop apears out from the darkness!")
     time.sleep(4)
     def shop():
-        shoptravel = raw_input("Would u like to travel to the shop(yes or no)")
+        shop = raw_input("Would u like to travel to the shop(yes or no)")
         time.sleep(2)
-        if shoptravel== ("yes") or shop== ("y") or shop== ("Yes"):
+        if shop== ("yes") or shop== ("y") or shop== ("Yes"):
             print("Traveling to shop...")
             time.sleep(3)
             print("Your money =")
@@ -3466,238 +3543,382 @@ while (done4):
             time.sleep(2)
             if raw_input== ("sturdy helm"):
                 if money >= 75:
-                    helm = sturdy_helm
-                    character = character + helm
-                    money = money -helm
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if helm== 75:
+                        print("You already own this item, and you will not get to purchase this time")
+                    elif helm >= 75:
+                        print("You own a better item, and will not got to purchase this time")
+                    else:
+                        helm = sturdy_helm
+                        character = character - sturdy_helm
+                        character = character + sturdy_helm
+                        money = money - helm
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("copper helm"):
                 if money >= 175:
-                    helm = copper_helm
-                    character = character + helm
-                    money = money -helm
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if helm== 175:
+                        print("You alreardy own this item, and will not get to purchase this time")
+                    elif helm >=175:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - helm
+                        helm = copper_helm
+                        character = character + helm
+                        money = money - helm
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("bronze helm"):
-                if money >= 275:    
-                    helm = bronze_helm
-                    character = character + helm
-                    money = money -helm
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                if money >= 275:
+                    if helm== 275:
+                        print("You already own this item, and will not get to purhcase this time")
+                    elif helm >= 275:
+                        print("You own a better item and will not be able to purchase this time")
+                    else:
+                        character = character - helm
+                        helm = bronze_helm
+                        character = character + helm
+                        money = money - helm
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("silver helm"):
                 if money >= 375: 
-                    helm = silver_helm
-                    character = character + helm
-                    money = money -helm
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if helm== 375:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif helm >= (375):
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - helm
+                        helm = silver_helm
+                        character = character + helm
+                        money = money - helm
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("gold helm"):
                 if money >= 475:
-                    helm = gold_helm
-                    character = character + helm
-                    money = money -helm
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if helm== 475:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif helm >= 475:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - helm
+                        helm = gold_helm
+                        character = character + helm
+                        money = money - helm
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
+                else:
+                    print("You do not have enough money to purchase this item. The vendors have chased you out.")
+            elif raw_input== ("enchanted helm"):
+                if money >= 575:
+                    if helm== 575:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif helm >= 575:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - helm
+                        helm = enchanted_helm
+                        character = character + helm
+                        money = money - helm
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("sturdy chestplate"):
                 if money >= 100:
-                    chestplate = sturdy_chestplate
-                    character = character + chestplate
-                    money = money -chestplate
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if chestplate== 100:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif chesplate >= 100:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - chestplate
+                        chestplate = sturdy_chestplate
+                        character = character + chestplate
+                        money = money - chestplate
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("copper chestplate"):
-                if money >= 200:
-                    chestplate = copper_chestplate
-                    character = character + chestplate
-                    money = money -chestplate
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                if money >= 100:
+                    if chestplate== 200:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif chesplate >= 200:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - chestplate
+                        chestplate = copper_chestplate
+                        character = character + chestplate
+                        money = money - chestplate
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("bronze chestplate"):
                 if money >= 300:
-                    chestplate = bronze_chestplate
-                    character = character + chestplate
-                    money = money -chestplate
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if chestplate== 300:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif chesplate >= 300:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - chestplate
+                        chestplate = bronze_chestplate
+                        character = character + chestplate
+                        money = money - chestplate
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("silver chestplate"):
                 if money >= 400:
-                    chestplate = sturdy_chestplate
-                    character = character + chestplate
-                    money = money -chestplate
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if chestplate== 400:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif chesplate >= 400:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - chestplate
+                        chestplate = silver_chestplate
+                        character = character + chestplate
+                        money = money - chestplate
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("gold chestplate"):
                 if money >= 500:
-                    chestplate = gold_chestplate
-                    character = character + chestplate
-                    money = money -chestplate
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if chestplate== 500:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif chesplate >= 500:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - chestplate
+                        chestplate = gold_chestplate
+                        character = character + chestplate
+                        money = money - chestplate
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("enchanted chestplate"):
                 if money >= 600:
-                    chestplate = enchanted_chestplate
-                    character = character + chestplate
-                    money = money -chestplate
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if chestplate== 600:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif chesplate >= 600:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - chestplate
+                        chestplate = enchanted_chestplate
+                        character = character + chestplate
+                        money = money - chestplate
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("sturdy leggings"):
                 if money >= 50:
-                    leggings = sturdy_leggings
-                    character = character + leggings
-                    money = money -leggings
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if leggings== 50:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif leggings >= 50:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - leggings
+                        leggings = sturdy_leggings
+                        character = character + leggings
+                        money = money - leggings
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("copper leggings"):
                 if money >= 150:
-                    leggings = copper_leggings
-                    character = character + leggings
-                    money = money -leggings
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if leggings== 150:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif leggings >= 150:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - leggings
+                        leggings = copper_leggings
+                        character = character + leggings
+                        money = money - leggings
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("bronze leggings"):
                 if money >= 250:
-                    leggings = bronze_leggings
-                    character = character + leggings
-                    money = money -leggings
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if leggings== 250:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif leggings >= 250:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - leggings
+                        leggings = bronze_leggings
+                        character = character + leggings
+                        money = money - leggings
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("silver leggings"):
                 if money >= 350:
-                    leggings = silver_leggings
-                    character = character + leggings
-                    money = money -leggings
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if leggings== 350:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif leggings >= 350:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - leggings
+                        leggings = silver_leggings
+                        character = character + chestplate
+                        money = money - leggings
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("gold leggings"):
                 if money >= 450:
-                    leggings = gold_leggings
-                    character = character + leggings
-                    money = money -leggings
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if leggings== 450:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif leggings >= 450:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - leggings
+                        leggings = gold_leggings
+                        character = character + chestplate
+                        money = money - leggings
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("enchanted leggings"):
                 if money >= 550:
-                    leggings = enchanted_leggings
-                    character = character + leggings
-                    money = money -leggings
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if leggings== 550:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif leggings >= 550:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - leggings
+                        leggings = enchanted_leggings
+                        character = character + leggings
+                        money = money - leggings
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("sturdy boots"):
                 if money >= 25:
-                    boots = sturdy_boots
-                    character = character + boots
-                    money = money -leggings
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if boots== 25:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif boots >= 25:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - boots
+                        boots = sturdy_boots
+                        character = character + boots
+                        money = money - boots
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("copper boots"):
                 if money >= 125:
-                    boots = copper_boots
-                    character = character + boots
-                    money = money -boots
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if boots== 125:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif boots >= 125:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - boots
+                        boots = copper_boots
+                        character = character + boots
+                        money = money - boots
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("bronze boots"):
                 if money >= 225:
-                    boots = bronze_boots
-                    character = character + boots
-                    money = money -boots
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if boots== 225:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif boots >= 225:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - boots
+                        boots = bronze_boots
+                        character = character + boots
+                        money = money - boots
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("silver boots"):
                 if money >= 325:
-                    boots = silver_boots
-                    character = character + boots
-                    money = money -boots
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if boots== 325:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif boots >= 325:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - boots
+                        boots = silver_boots
+                        character = character + boots
+                        money = money - boots
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("gold boots"):
                 if money >= 425:
-                    boots = gold_boots
-                    character = character + boots
-                    money = money -boots
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if boots== 425:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif boots >= 425:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - boots
+                        boots = gold_boots
+                        character = character + boots
+                        money = money - boots
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             elif raw_input== ("enchanted boots"):
                 if money >= 525:
-                    boots = enchanted_boots
-                    character = character + boots
-                    money = money -boots
-                    print("You now have" + character + "health")
-                    print("You also have" + money + "dollars remaining")
+                    if boots== 525:
+                        print("You already own this item, and will not get to purchase this time")
+                    elif boots >= 525:
+                        print("You own a better item, and will not get to purchase this time")
+                    else:
+                        character = character - boots
+                        boots = enchanted_boots
+                        character = character + boots
+                        money = money - boots
+                        print("You now have" + character + "health")
+                        print("You also have" + money + "dollars remaining")
                 else:
                     print("You do not have enough money to purchase this item. The vendors have chased you out.")
             else:
                 print("You have typed inccorectly, and will not get to use the shop this time")
             
                 time.sleep(3)
-            # print("Continuing journey...")
-            # time.sleep(2)
-        elif shoptravel== ("no") or shop== ("n") or shop== ("No"):
+            print("Continuing journey...")
+            time.sleep(2)
+        elif shop== ("no") or shop== ("n") or shop== ("No"):
             print("Continuing journey...")
             time.sleep(3)
         else:
             print("You have typed inccorectly, and will not get to use the shop this time")
-            print("Continuing journey")
-    
-    
+            print("Continuing journey...")
     shop()  #just put this in when you want to use the shop (We can also redefine the variable when we want to add to the shop) 
-    
-    character = 700 #or whatever the character's base health is at the time (dont add in the free helm, it will come)
-    character = character + helm
-    character = character + chestplate
-    character = character + leggings
-    character = character + boots 
-        #start the battle now... 
-    print("You return to Lady Oriel with your head up high")
-    time.sleep(3)
-    print("For you have defeated a great evil")
-    time.sleep(3)
-    print("Lady Oriel says 'great job ", character, " the unicorns are free")
+    print("You return to Lady Oriel and tell her that you believe that she was working for Malistaire")
+    time.sleep(5)
+    print("Lady Oriel, congratulates you, but warns you of far greater dangers ahead. She tells to go tell Headmaster Ambrose what you have discovered")
+    time.sleep(7)
+    print("You leave that Hedge Maze, and walk back down Unicorn way")
     time.sleep(4)
-    print("Suddenly, you hear a large explo")
-    
+    print("You notice that a darkness seems to be lifting, and the pixie's have returned to their normal, cheerful state")
+    time.sleep(6)
