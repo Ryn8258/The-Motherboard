@@ -1461,8 +1461,6 @@ while (done2):
                                                             print("You win!")
                                                             done= False
                                                             break
-                else:
-                    print("...ok ur hacking")
 done3= True
 while (done3):
     print("You have received a Sturdy Helm for defeating a lost soul, it will give you + 75 max health")
@@ -1526,9 +1524,9 @@ while (done3):
     time.sleep(4)
     print("You leave the Hedge Maze")
     time.sleep(3)
-    shop = raw_input("Would u like to travel to the shop(yes or no)")
+    shoptravel = raw_input("Would u like to travel to the shop(yes or no)")
     time.sleep(2)
-    if shop== ("yes") or shop== ("y") or shop== ("Yes"):
+    if shoptravel== ("yes") or shop== ("y") or shop== ("Yes"):
         print("Traveling to shop...")
         time.sleep(3)
         print("Your money =")
@@ -1904,7 +1902,7 @@ while (done3):
             time.sleep(3)
         print("Continuing journey...")
         time.sleep(2)
-    elif shop== ("no") or shop== ("n") or shop== ("No"):
+    elif shoptravel== ("no") or shop== ("n") or shop== ("No"):
         print("Continuing journey...")
         time.sleep(3)
     else:
@@ -2347,19 +2345,19 @@ while (done3):
     print("Your turn is starting")                                                                                                  #turn 6 battle 3
     time.sleep(2)
     if wizard== "Fire" or wizard== "fire":
-        print("You have flame spark, fire cat, and fire elf in your spell deck")
+        print("You have flame spark, fire cat, fire elf, and sun bird in your spell deck")
     elif wizard== "Ice" or wizard== "ice":
-        print("You have ice shard, frost beetle, and snow serpent in your spell deck")
+        print("You have ice shard, frost beetle, snow serpent, and evil snowman in your spell deck")
     elif wizard== "Life" or wizard== "life":
-        print("You have life beam, imp, and leprechaun in your spell deck")
+        print("You have life beam, imp, leprechaun and seraphin your spell deck")
     elif wizard== "Death" or wizard== "death":
-        print("You have death blast, dark pixie, and ghoul in your spell deck")
+        print("You have death blast, dark pixie, ghou, and banshee in your spell deck")
     elif wizard== "Myth" or wizard== "myth":
-        print("You have myth blast, blood bat, and troll in your spell deck")
+        print("You have myth blast, blood bat, troll, and cyclops in your spell deck")
     elif wizard== "Storm" or wizard== "storm":
-        print("You have lightning spark, storm snake, and lightning bat in your spell deck")
+        print("You have lightning spark, storm snake, lightning bat, and storm shark in your spell deck")
     elif wizard== "Balance" or wizard== "balance":
-        print("You have balance beam, scarab, and scorpionin your spell deck")                      #we need to delete all the rank 4 spells from here down because we have different text to tell the person if they have them
+        print("You have balance beam, scarab, scorpion, and sandstorm in your spell deck")
     else:
         print("Because you picked an invalid class you cannot continue the game, please reload the page")
     time.sleep(4)
@@ -2555,7 +2553,7 @@ while (done3):
             else:
                 print("Because you picked an invalid class you cannot continue the game, please reload the page")
             time.sleep(4)
-            if pixie >= 0:
+            if pixie >= 1:
                 print("you have" + pixie + "pixies")
             else:
                 print("You have used your pixie")
@@ -3531,7 +3529,7 @@ while (done4):
     def shop():
         shop = raw_input("Would u like to travel to the shop(yes or no)")
         time.sleep(2)
-        if shop== ("yes") or shop== ("y") or shop== ("Yes"):
+        if shoptravel== ("yes") or shop== ("y") or shop== ("Yes"):
             print("Traveling to shop...")
             time.sleep(3)
             print("Your money =")
@@ -3907,13 +3905,12 @@ while (done4):
                 time.sleep(3)
             print("Continuing journey...")
             time.sleep(2)
-        elif shop== ("no") or shop== ("n") or shop== ("No"):
+        elif shoptravel== ("no") or shop== ("n") or shop== ("No"):
             print("Continuing journey...")
             time.sleep(3)
         else:
             print("You have typed inccorectly, and will not get to use the shop this time")
             print("Continuing journey...")
-    shop()  #just put this in when you want to use the shop (We can also redefine the variable when we want to add to the shop) 
     print("You return to Lady Oriel and tell her that you believe that she was working for Malistaire")
     time.sleep(5)
     print("Lady Oriel, congratulates you, but warns you of far greater dangers ahead. She tells to go tell Headmaster Ambrose what you have discovered")
@@ -3922,3 +3919,7 @@ while (done4):
     time.sleep(4)
     print("You notice that a darkness seems to be lifting, and the pixie's have returned to their normal, cheerful state")
     time.sleep(6)
+    print("You walk into Headmaster Ambrose's office and inform him of the happenings on Unicorn Way")
+    time.sleep(5)
+    print("Ambrose looks worried, he thinks for a moment. Then he asks you if you can go check with his friend in Triton Avenue, Susie Gryphon Bane. She's been haveing some interesting problems, and she could use your help.")
+    time.sleep(10)
