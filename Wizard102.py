@@ -1475,7 +1475,8 @@ while (done3):
     chestplate = N_A
     leggings = N_A
     boots = N_A
-    print("Your character now has" + character + "health")
+    print("Your character health now equals =")
+    print character
     time.sleep(3.7)
     print("You continue on down the alley, to the Hedge Maze, in Unicorn Way")
     time.sleep(4.5)
@@ -3923,3 +3924,5 @@ while (done4):
     time.sleep(5)
     print("Ambrose looks worried, he thinks for a moment. Then he asks you if you can go check with his friend in Triton Avenue, Susie Gryphon Bane. She's been haveing some interesting problems, and she could use your help.")
     time.sleep(10)
+    print("He gives you a map, and you head off to Triton Avenue")
+    time.sleep(3.5)
