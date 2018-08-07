@@ -2017,7 +2017,7 @@ while (done3):
         print ("You have delt 110 dam to the enemy. Enemy health =")
         print enemy
     elif spell== "pixie":
-        if pixie <= 0:
+        if pixie <= 1:
             print("sorry you are out of pixies and you have fizzled")
         else:
             character = character + 350
@@ -2056,8 +2056,8 @@ while (done3):
     else:
         print("Because you picked an invalid class you cannot continue the game, please reload the page")
     time.sleep(4)
-    if pixie >= 0:
-        print("you have" + pixie + "pixies")
+    if pixie >= 1:
+        print("you have" + pixie / 2 + "pixies")
     else:
         print("You have used your pixie")
     spell= raw_input("Enter your spell (please use only lowercase):")
@@ -2078,7 +2078,7 @@ while (done3):
         print ("You have delt 110 dam to the enemy. Enemy health =")
         print enemy
     elif spell== "pixie":
-        if pixie <= 0:
+        if pixie <= 1:
             print("sorry you are out of pixies and you have fizzled")
         else:
             character = character + 350
@@ -2115,8 +2115,8 @@ while (done3):
     else:
         print("Because you picked an invalid class you cannot continue the game, please reload the page")
     time.sleep(4)
-    if pixie >= 0:
-        print("you have" + pixie + "pixies")
+    if pixie >= 1:
+        print("you have" + pixie / 2 + "pixies")
     else:
         print("You have used your pixie")
     spell= raw_input("Enter your spell (please use only lowercase):")
@@ -2141,7 +2141,7 @@ while (done3):
         print("You have delt 220 dam to the enemy. Enemy helath =")
         print enemy
     elif spell== "pixie":
-        if pixie <= 0:
+        if pixie <= 1:
             print("sorry you are out of pixies and you have fizzled")
         else:
             character = character + 350
@@ -2204,8 +2204,8 @@ while (done3):
     else:
         print("Because you picked an invalid class you cannot continue the game, please reload the page")
     time.sleep(4)
-    if pixie >= 0:
-        print("you have" + pixie + "pixies")
+    if pixie >= 1:
+        print("you have" + pixie / 2 + "pixies")
     else:
         print("You have used your pixie")
     spell= raw_input("Enter your spell (please use only lowercase):")
@@ -2230,7 +2230,7 @@ while (done3):
         print("You have delt 220 dam to the enemy. Enemy helath =")
         print enemy
     elif spell== "pixie":
-        if pixie <= 0:
+        if pixie <= 1:
             print("sorry you are out of pixies and you have fizzled")
         else:
             character = character + 350
@@ -2291,8 +2291,8 @@ while (done3):
     else:
         print("Because you picked an invalid class you cannot continue the game, please reload the page")
     time.sleep(4)
-    if pixie >= 0:
-        print("you have" + pixie + "pixies")
+    if pixie >= 1:
+        print("you have" + pixie / 2 + "pixies")
     else:
         print("You have used your pixie")
     spell= raw_input("Enter your spell (please use only lowercase):")
@@ -2317,7 +2317,7 @@ while (done3):
         print("You have delt 220 dam to the enemy. Enemy helath =")
         print enemy
     elif spell== "pixie":
-        if pixie <= 0:
+        if pixie <= 1:
             print("sorry you are out of pixies and you have fizzled")
         else:
             character = character + 350
@@ -2378,17 +2378,17 @@ while (done3):
     else:
         print("Because you picked an invalid class you cannot continue the game, please reload the page")
     time.sleep(4)
-    if pixie >= 0:
-        print("you have" + pixie + "pixies")
+    if pixie >= 1:
+        print("you have" + pixie / 2 + "pixies")
     else:
         print("You have used your pixie")
     if wizard== "Fire" or wizard== "fire":
-        if sun_bird <= 1:
+        if sun_bird >= 1:
             print("You have" + sun_bird / 2 + "sunbirds left")
         else:
             print("You have no sunbirds left")
     elif wizard== "Ice" or wizard== "ice":
-        if evil_snowman <= 1:
+        if evil_snowman >= 1:
             print("You have" + evil_snowman / 2 + "evil snowmans left")
         else:
             print("You have no evil snowmans left")
@@ -2441,7 +2441,7 @@ while (done3):
         print("You have delt 220 dam to the enemy. Enemy helath =")
         print enemy
     elif spell== "pixie":
-        if pixie <= 0:
+        if pixie <= 1:
             print("sorry you are out of pixies and you have fizzled")
         else:
             character = character + 350
@@ -2571,16 +2571,16 @@ while (done3):
                 print("Because you picked an invalid class you cannot continue the game, please reload the page")
             time.sleep(4)
             if pixie >= 1:
-                print("you have" + pixie + "pixies")
+                print("you have" + pixie / 2 + "pixies")
             else:
                 print("You have used your pixie")
             if wizard== "Fire" or wizard== "fire":
-                if sun_bird <= 1:
+                if sun_bird >= 1:
                     print("You have" + sun_bird / 2 + "sunbirds left")
                 else:
                     print("You have no sunbirds left")
             elif wizard== "Ice" or wizard== "ice":
-                if evil_snowman <= 1:
+                if evil_snowman >= 1:
                     print("You have" + evil_snowman / 2 + "evil snowmans left")
                 else:
                     print("You have no evil snowmans left")
@@ -2635,7 +2635,7 @@ while (done3):
                 print("You have delt 220 dam to the enemy. Enemy helath =")
                 print enemy
             elif spell== "pixie":
-                if pixie <= 0:
+                if pixie <= 1:
                     print("sorry you are out of pixies and you have fizzled")
                 else:
                     character = character + 350
@@ -2762,17 +2762,17 @@ while (done3):
                     else:
                         print("Because you picked an invalid class you cannot continue the game, please reload the page")
                     time.sleep(4)
-                    if pixie >= 0:
-                        print("you have" + pixie + "pixies")
+                    if pixie >= 1:
+                        print("you have" + pixie / 2 + "pixies")
                     else:
                         print("You have used your pixie")
                     if wizard== "Fire" or wizard== "fire":
-                        if sun_bird <= 1:
+                        if sun_bird >= 1:
                             print("You have" + sun_bird / 2 + "sunbirds left")
                         else:
                             print("You have no sunbirds left")
                     elif wizard== "Ice" or wizard== "ice":
-                        if evil_snowman <= 1:
+                        if evil_snowman >= 1:
                             print("You have" + evil_snowman / 2 + "evil snowmans left")
                         else:
                             print("You have no evil snowmans left")
@@ -2827,7 +2827,7 @@ while (done3):
                         print("You have delt 220 dam to the enemy. Enemy helath =")
                         print enemy
                     elif spell== "pixie":
-                        if pixie <= 0:
+                        if pixie <= 1:
                             print("sorry you are out of pixies and you have fizzled")
                         else:
                             character = character + 350
@@ -2954,17 +2954,17 @@ while (done3):
                             else:
                                 print("Because you picked an invalid class you cannot continue the game, please reload the page")
                             time.sleep(4)
-                            if pixie >= 0:
-                                print("you have" + pixie + "pixies")
+                            if pixie >= 1:
+                                print("you have" + pixie / 2+ "pixies")
                             else:
                                 print("You have used your pixie")
                             if wizard== "Fire" or wizard== "fire":
-                                if sun_bird <= 1:
+                                if sun_bird >= 1:
                                     print("You have" + sun_bird / 2 + "sunbirds left")
                                 else:
                                     print("You have no sunbirds left")
                             elif wizard== "Ice" or wizard== "ice":
-                                if evil_snowman <= 1:
+                                if evil_snowman >= 1:
                                     print("You have" + evil_snowman / 2 + "evil snowmans left")
                                 else:
                                     print("You have no evil snowmans left")
@@ -3019,7 +3019,7 @@ while (done3):
                                 print("You have delt 220 dam to the enemy. Enemy helath =")
                                 print enemy
                             elif spell== "pixie":
-                                if pixie <= 0:
+                                if pixie <= 1:
                                     print("sorry you are out of pixies and you have fizzled")
                                 else:
                                     character = character + 350
@@ -3148,17 +3148,17 @@ while (done3):
                                     else:
                                         print("Because you picked an invalid class you cannot continue the game, please reload the page")
                                     time.sleep(4)
-                                    if pixie >= 0:
-                                        print("you have" + pixie + "pixies")
+                                    if pixie >= 1:
+                                        print("you have" + pixie / 2 + "pixies")
                                     else:
                                         print("You have used your pixie")
                                     if wizard== "Fire" or wizard== "fire":
-                                        if sun_bird <= 1:
+                                        if sun_bird >= 1:
                                             print("You have" + sun_bird / 2 + "sunbirds left")
                                         else:
                                             print("You have no sunbirds left")
                                     elif wizard== "Ice" or wizard== "ice":
-                                        if evil_snowman <= 1:
+                                        if evil_snowman >= 1:
                                             print("You have" + evil_snowman / 2 + "evil snowmans left")
                                         else:
                                             print("You have no evil snowmans left")
@@ -3213,7 +3213,7 @@ while (done3):
                                         print("You have delt 220 dam to the enemy. Enemy helath =")
                                         print enemy
                                     elif spell== "pixie":
-                                        if pixie <= 0:
+                                        if pixie <= 1:
                                             print("sorry you are out of pixies and you have fizzled")
                                         else:
                                             character = character + 350
@@ -3340,17 +3340,17 @@ while (done3):
                                             else:
                                                 print("Because you picked an invalid class you cannot continue the game, please reload the page")
                                             time.sleep(4)
-                                            if pixie >= 0:
-                                                print("you have" + pixie + "pixies")
+                                            if pixie >= 1:
+                                                print("you have" + pixie / 2 + "pixies")
                                             else:
                                                 print("You have used your pixie")
                                             if wizard== "Fire" or wizard== "fire":
-                                                if sun_bird <= 1:
+                                                if sun_bird >= 1:
                                                     print("You have" + sun_bird / 2 + "sunbirds left")
                                                 else:
                                                     print("You have no sunbirds left")
                                             elif wizard== "Ice" or wizard== "ice":
-                                                if evil_snowman <= 1:
+                                                if evil_snowman >= 1:
                                                     print("You have" + evil_snowman / 2 + "evil snowmans left")
                                                 else:
                                                     print("You have no evil snowmans left")
@@ -3405,7 +3405,7 @@ while (done3):
                                                 print("You have delt 220 dam to the enemy. Enemy helath =")
                                                 print enemy
                                             elif spell== "pixie":
-                                                if pixie <= 0:
+                                                if pixie <= 1:
                                                     print("sorry you are out of pixies and you have fizzled")
                                                 else:
                                                     character = character + 350
@@ -3532,17 +3532,17 @@ while (done3):
                                                     else:
                                                         print("Because you picked an invalid class you cannot continue the game, please reload the page")
                                                     time.sleep(4)
-                                                    if pixie >= 0:
-                                                        print("you have" + pixie + "pixies")
+                                                    if pixie >= 1:
+                                                        print("you have" + pixie / 2 + "pixies")
                                                     else:
                                                         print("You have used your pixie")
                                                     if wizard== "Fire" or wizard== "fire":
-                                                        if sun_bird <= 1:
+                                                        if sun_bird >= 1:
                                                             print("You have" + sun_bird / 2 + "sunbirds left")
                                                         else:
                                                             print("You have no sunbirds left")
                                                     elif wizard== "Ice" or wizard== "ice":
-                                                        if evil_snowman <= 1:
+                                                        if evil_snowman >= 1:
                                                             print("You have" + evil_snowman / 2 + "evil snowmans left")
                                                         else:
                                                             print("You have no evil snowmans left")
@@ -3597,7 +3597,7 @@ while (done3):
                                                         print("You have delt 220 dam to the enemy. Enemy helath =")
                                                         print enemy
                                                     elif spell== "pixie":
-                                                        if pixie <= 0:
+                                                        if pixie <= 1:
                                                             print("sorry you are out of pixies and you have fizzled")
                                                         else:
                                                             character = character + 350
@@ -4127,4 +4127,3 @@ while (done4):
     print("He gives you a map, and you head off to Triton Avenue")
     time.sleep(3.5)
     print("As you arrive in triton avenue you notice that the air feels thicker with evil in this area")
-    shop():
