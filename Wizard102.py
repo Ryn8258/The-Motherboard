@@ -1998,7 +1998,7 @@ while (done3):
     if pixie >= 1:
         print("you have" + pixie / 2 + "pixies")
     else:
-        print("You have used your pixie")
+        print("You have already used your pixie and have fizzled")
     spell= raw_input("Enter your spell (please use only lowercase):")
     if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
         enemy = enemy - 60
@@ -2059,7 +2059,7 @@ while (done3):
     if pixie >= 1:
         print("you have" + pixie / 2 + "pixies")
     else:
-        print("You have used your pixie")
+        print("You have already used your pixie and have fizzled")
     spell= raw_input("Enter your spell (please use only lowercase):")
     if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
         enemy = enemy - 60
@@ -2118,7 +2118,7 @@ while (done3):
     if pixie >= 1:
         print("you have" + pixie / 2 + "pixies")
     else:
-        print("You have used your pixie")
+        print("You have already used your pixie and have fizzled")
     spell= raw_input("Enter your spell (please use only lowercase):")
     if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
         enemy = enemy - 60
@@ -2207,7 +2207,7 @@ while (done3):
     if pixie >= 1:
         print("you have" + pixie / 2 + "pixies")
     else:
-        print("You have used your pixie")
+        print("You have already used your pixie and have fizzled")
     spell= raw_input("Enter your spell (please use only lowercase):")
     if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
         enemy = enemy - 60
@@ -2294,7 +2294,7 @@ while (done3):
     if pixie >= 1:
         print("you have" + pixie / 2 + "pixies")
     else:
-        print("You have used your pixie")
+        print("You have already used your pixie and have fizzled")
     spell= raw_input("Enter your spell (please use only lowercase):")
     if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
         enemy = enemy - 60
@@ -2381,7 +2381,7 @@ while (done3):
     if pixie >= 1:
         print("you have" + pixie / 2 + "pixies")
     else:
-        print("You have used your pixie")
+        print("You have already used your pixie and have fizzled")
     if wizard== "Fire" or wizard== "fire":
         if sun_bird >= 1:
             print("You have" + sun_bird / 2 + "sunbirds left")
@@ -2393,27 +2393,27 @@ while (done3):
         else:
             print("You have no evil snowmans left")
     elif wizard== "Life" or wizard== "life":
-        if seraph <= 1:
+        if seraph >= 1:
             print("You have" + seraph / 2 + "seraphs left")
         else:
             print("You have no seraphs left")
     elif wizard== "Death" or wizard== "death":
-        if banshee <= 1:
+        if banshee >= 1:
             print("You have" + banshee / 2 + "banshees left")
         else:
             print("You have no banshees left")
     elif wizard== "Myth" or wizard== "myth":
-        if cyclops <= 1:
+        if cyclops >= 1:
             print("You have" + cyclops / 2 + "cyclops's left")
         else:
             print("You have no cyclops's left")
     elif wizard== "Storm" or wizard== "storm":
-        if storm_shark <= 1:
+        if storm_shark >= 1:
             print("You have" + storm_shark / 2 + "storm sharks left")
         else:
             print("You have no storm sharks left")
     elif wizard== "Balance" or wizard== "balance":
-        if sandstorm <= 1:
+        if sandstorm >= 1:
             print("You have" + sandstorm / 2 + "sandstorms left")
         else:
             print("You have no sandstorms left")
@@ -2573,7 +2573,7 @@ while (done3):
             if pixie >= 1:
                 print("you have" + pixie / 2 + "pixies")
             else:
-                print("You have used your pixie")
+                print("You have already used your pixie and have fizzled")
             if wizard== "Fire" or wizard== "fire":
                 if sun_bird >= 1:
                     print("You have" + sun_bird / 2 + "sunbirds left")
@@ -2585,27 +2585,27 @@ while (done3):
                 else:
                     print("You have no evil snowmans left")
             elif wizard== "Life" or wizard== "life":
-                if seraph <= 1:
+                if seraph >= 1:
                     print("You have" + seraph / 2 + "seraphs left")
                 else:
                     print("You have no seraphs left")
             elif wizard== "Death" or wizard== "death":
-                if banshee <= 1:
+                if banshee >= 1:
                     print("You have" + banshee / 2 + "banshees left")
                 else:
                     print("You have no banshees left")
             elif wizard== "Myth" or wizard== "myth":
-                if cyclops <= 1:
+                if cyclops >= 1:
                     print("You have" + cyclops / 2 + "cyclops's left")
                 else:
                     print("You have no cyclops's left")
             elif wizard== "Storm" or wizard== "storm":
-                if storm_shark <= 1:
+                if storm_shark >= 1:
                     print("You have" + storm_shark / 2 + "storm sharks left")
                 else:
                     print("You have no storm sharks left")
             elif wizard== "Balance" or wizard== "balance":
-                if sandstorm <= 1:
+                if sandstorm >= 1:
                     print("You have" + sandstorm / 2 + "sandstorms left")
                 else:
                     print("You have no sandstorms left")
@@ -2765,7 +2765,7 @@ while (done3):
                     if pixie >= 1:
                         print("you have" + pixie / 2 + "pixies")
                     else:
-                        print("You have used your pixie")
+                        print("You have already used your pixie and have fizzled")
                     if wizard== "Fire" or wizard== "fire":
                         if sun_bird >= 1:
                             print("You have" + sun_bird / 2 + "sunbirds left")
@@ -2777,27 +2777,27 @@ while (done3):
                         else:
                             print("You have no evil snowmans left")
                     elif wizard== "Life" or wizard== "life":
-                        if seraph <= 1:
+                        if seraph >= 1:
                             print("You have" + seraph / 2 + "seraphs left")
                         else:
                             print("You have no seraphs left")
                     elif wizard== "Death" or wizard== "death":
-                        if banshee <= 1:
+                        if banshee >= 1:
                             print("You have" + banshee / 2 + "banshees left")
                         else:
                             print("You have no banshees left")
                     elif wizard== "Myth" or wizard== "myth":
-                        if cyclops <= 1:
+                        if cyclops >= 1:
                             print("You have" + cyclops / 2 + "cyclops's left")
                         else:
                             print("You have no cyclops's left")
                     elif wizard== "Storm" or wizard== "storm":
-                        if storm_shark <= 1:
+                        if storm_shark >= 1:
                             print("You have" + storm_shark / 2 + "storm sharks left")
                         else:
                             print("You have no storm sharks left")
                     elif wizard== "Balance" or wizard== "balance":
-                        if sandstorm <= 1:
+                        if sandstorm >= 1:
                             print("You have" + sandstorm / 2 + "sandstorms left")
                         else:
                             print("You have no sandstorms left")
@@ -2957,7 +2957,7 @@ while (done3):
                             if pixie >= 1:
                                 print("you have" + pixie / 2+ "pixies")
                             else:
-                                print("You have used your pixie")
+                                print("You have already used your pixie and have fizzled")
                             if wizard== "Fire" or wizard== "fire":
                                 if sun_bird >= 1:
                                     print("You have" + sun_bird / 2 + "sunbirds left")
@@ -2969,27 +2969,27 @@ while (done3):
                                 else:
                                     print("You have no evil snowmans left")
                             elif wizard== "Life" or wizard== "life":
-                                if seraph <= 1:
+                                if seraph >= 1:
                                     print("You have" + seraph / 2 + "seraphs left")
                                 else:
                                     print("You have no seraphs left")
                             elif wizard== "Death" or wizard== "death":
-                                if banshee <= 1:
+                                if banshee >= 1:
                                     print("You have" + banshee / 2 + "banshees left")
                                 else:
                                     print("You have no banshees left")
                             elif wizard== "Myth" or wizard== "myth":
-                                if cyclops <= 1:
+                                if cyclops >= 1:
                                     print("You have" + cyclops / 2 + "cyclops's left")
                                 else:
                                     print("You have no cyclops's left")
                             elif wizard== "Storm" or wizard== "storm":
-                                if storm_shark <= 1:
+                                if storm_shark >= 1:
                                     print("You have" + storm_shark / 2 + "storm sharks left")
                                 else:
                                     print("You have no storm sharks left")
                             elif wizard== "Balance" or wizard== "balance":
-                                if sandstorm <= 1:
+                                if sandstorm >= 1:
                                     print("You have" + sandstorm / 2 + "sandstorms left")
                                 else:
                                     print("You have no sandstorms left")
@@ -3151,7 +3151,7 @@ while (done3):
                                     if pixie >= 1:
                                         print("you have" + pixie / 2 + "pixies")
                                     else:
-                                        print("You have used your pixie")
+                                        print("You have already used your pixie and have fizzled")
                                     if wizard== "Fire" or wizard== "fire":
                                         if sun_bird >= 1:
                                             print("You have" + sun_bird / 2 + "sunbirds left")
@@ -3163,27 +3163,27 @@ while (done3):
                                         else:
                                             print("You have no evil snowmans left")
                                     elif wizard== "Life" or wizard== "life":
-                                        if seraph <= 1:
+                                        if seraph >= 1:
                                             print("You have" + seraph / 2 + "seraphs left")
                                         else:
                                             print("You have no seraphs left")
                                     elif wizard== "Death" or wizard== "death":
-                                        if banshee <= 1:
+                                        if banshee >= 1:
                                             print("You have" + banshee / 2 + "banshees left")
                                         else:
                                             print("You have no banshees left")
                                     elif wizard== "Myth" or wizard== "myth":
-                                        if cyclops <= 1:
+                                        if cyclops >= 1:
                                             print("You have" + cyclops / 2 + "cyclops's left")
                                         else:
                                             print("You have no cyclops's left")
                                     elif wizard== "Storm" or wizard== "storm":
-                                        if storm_shark <= 1:
+                                        if storm_shark >= 1:
                                             print("You have" + storm_shark / 2 + "storm sharks left")
                                         else:
                                             print("You have no storm sharks left")
                                     elif wizard== "Balance" or wizard== "balance":
-                                        if sandstorm <= 1:
+                                        if sandstorm >= 1:
                                             print("You have" + sandstorm / 2 + "sandstorms left")
                                         else:
                                             print("You have no sandstorms left")
@@ -3343,7 +3343,7 @@ while (done3):
                                             if pixie >= 1:
                                                 print("you have" + pixie / 2 + "pixies")
                                             else:
-                                                print("You have used your pixie")
+                                                print("You have already used your pixie and have fizzled")
                                             if wizard== "Fire" or wizard== "fire":
                                                 if sun_bird >= 1:
                                                     print("You have" + sun_bird / 2 + "sunbirds left")
@@ -3355,27 +3355,27 @@ while (done3):
                                                 else:
                                                     print("You have no evil snowmans left")
                                             elif wizard== "Life" or wizard== "life":
-                                                if seraph <= 1:
+                                                if seraph >= 1:
                                                     print("You have" + seraph / 2 + "seraphs left")
                                                 else:
                                                     print("You have no seraphs left")
                                             elif wizard== "Death" or wizard== "death":
-                                                if banshee <= 1:
+                                                if banshee >= 1:
                                                     print("You have" + banshee / 2 + "banshees left")
                                                 else:
                                                     print("You have no banshees left")
                                             elif wizard== "Myth" or wizard== "myth":
-                                                if cyclops <= 1:
+                                                if cyclops >= 1:
                                                     print("You have" + cyclops / 2 + "cyclops's left")
                                                 else:
                                                     print("You have no cyclops's left")
                                             elif wizard== "Storm" or wizard== "storm":
-                                                if storm_shark <= 1:
+                                                if storm_shark >= 1:
                                                     print("You have" + storm_shark / 2 + "storm sharks left")
                                                 else:
                                                     print("You have no storm sharks left")
                                             elif wizard== "Balance" or wizard== "balance":
-                                                if sandstorm <= 1:
+                                                if sandstorm >= 1:
                                                     print("You have" + sandstorm / 2 + "sandstorms left")
                                                 else:
                                                     print("You have no sandstorms left")
@@ -3535,7 +3535,7 @@ while (done3):
                                                     if pixie >= 1:
                                                         print("you have" + pixie / 2 + "pixies")
                                                     else:
-                                                        print("You have used your pixie")
+                                                        print("You have already used your pixie and have fizzled")
                                                     if wizard== "Fire" or wizard== "fire":
                                                         if sun_bird >= 1:
                                                             print("You have" + sun_bird / 2 + "sunbirds left")
@@ -3547,27 +3547,27 @@ while (done3):
                                                         else:
                                                             print("You have no evil snowmans left")
                                                     elif wizard== "Life" or wizard== "life":
-                                                        if seraph <= 1:
+                                                        if seraph >= 1:
                                                             print("You have" + seraph / 2 + "seraphs left")
                                                         else:
                                                             print("You have no seraphs left")
                                                     elif wizard== "Death" or wizard== "death":
-                                                        if banshee <= 1:
+                                                        if banshee >= 1:
                                                             print("You have" + banshee / 2 + "banshees left")
                                                         else:
                                                             print("You have no banshees left")
                                                     elif wizard== "Myth" or wizard== "myth":
-                                                        if cyclops <= 1:
+                                                        if cyclops >= 1:
                                                             print("You have" + cyclops / 2 + "cyclops's left")
                                                         else:
                                                             print("You have no cyclops's left")
                                                     elif wizard== "Storm" or wizard== "storm":
-                                                        if storm_shark <= 1:
+                                                        if storm_shark >= 1:
                                                             print("You have" + storm_shark / 2 + "storm sharks left")
                                                         else:
                                                             print("You have no storm sharks left")
                                                     elif wizard== "Balance" or wizard== "balance":
-                                                        if sandstorm <= 1:
+                                                        if sandstorm >= 1:
                                                             print("You have" + sandstorm / 2 + "sandstorms left")
                                                         else:
                                                             print("You have no sandstorms left")
@@ -4113,17 +4113,237 @@ while (done4):
             print("You have typed inccorectly, and will not get to use the shop this time")
             print("Continuing journey...")
     print("You return to Lady Oriel and tell her that you believe that she was working for Malistaire")
-    time.sleep(5)
-    print("Lady Oriel, congratulates you, but warns you of far greater dangers ahead. She tells to go tell Headmaster Ambrose what you have discovered")
-    time.sleep(7)
-    print("You leave that Hedge Maze, and walk back down Unicorn way")
     time.sleep(4)
-    print("You notice that a darkness seems to be lifting, and the pixie's have returned to their normal, cheerful state")
-    time.sleep(6)
-    print("You walk into Headmaster Ambrose's office and inform him of the happenings on Unicorn Way")
+    print("Lady Oriel, congratulates you, but warns you of far greater dangers ahead. She tells to go tell Headmaster Ambrose what you have discovered")
+    time.sleep(8)
+    print("You leave that Hedge Maze, and walk back down Unicorn way")
     time.sleep(5)
+    print("You notice that a darkness seems to be lifting, and the pixie's have returned to their normal, cheerful state")
+    time.sleep(7)
+    print("You walk into Headmaster Ambrose's office and inform him of the happenings on Unicorn Way")
+    time.sleep(6)
     print("Ambrose looks worried, he thinks for a moment. Then he asks you if you can go check with his old student in Triton Avenue, Susie Gryphon Bane. She's been haveing some interesting problems, and she could use your help.")
-    time.sleep(10)
+    time.sleep(13)
     print("He gives you a map, and you head off to Triton Avenue")
-    time.sleep(3.5)
+    time.sleep(4.5)
     print("As you arrive in triton avenue you notice that the air feels thicker with evil in this area")
+    time.sleep(6.5)
+    print("You see a yellow hooded witch, seemingly deep in thought. You approach and her and introduce yourself.")
+    time.sleep(7)
+    print("She introduces herself as Susie Gryphon Bane. She explains that her good friend Ducan Grimwater has gone missing in the dark cave. She belives that rotting fodders have something to do with them. She ask you to defeat three and bring their necklaces to her.")
+    time.sleep(15)
+    print("Once you've defeated three return to her with the necklaces. You will not get a chance to restore your health in between battles")
+    time.sleep(4)
+    print("You head down the alley.")
+    trophies = N/A
+    time.sleep(2.5)
+    print("These enemie seem to be undead, but they are also conjuring up magic of the storm")
+    time.sleep(5)
+    print("You engage one of them")
+    time.sleep(3)
+    print("Your turn is starting")                                                                                              #turn 1
+    enemy = 450
+    time.sleep(2)
+    if wizard== "Fire" or wizard== "fire":
+        print("You have flame spark, and fire cat in your spell deck")
+    elif wizard== "Ice" or wizard== "ice":
+        print("You have ice shard, and frost beetle in your spell deck")
+    elif wizard== "Life" or wizard== "life":
+        print("You have life beam, and in your spell deck")
+    elif wizard== "Death" or wizard== "death":
+        print("You have death blast, and dark pixie")
+    elif wizard== "Myth" or wizard== "myth":
+        print("You have myth blast, and blood bat in your spell deck")
+    elif wizard== "Storm" or wizard== "storm":
+        print("You have lightning spark, and storm snake in your spell deck")
+    elif wizard== "Balance" or wizard== "balance":
+        print("You have balance beam, and scarab in your spell deck")
+    else:
+        print("Because you picked an invalid class you cannot continue the game, please reload the page")
+    time.sleep(4)
+    if pixie >= 1:
+        print("you have" + pixie / 2 + "pixies")
+    else:
+        print("You have already used your pixie and have fizzled")
+    spell= raw_input("Enter your spell (please use only lowercase):")
+    if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+        enemy = enemy - 60
+        print ("You have delt 60 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "storm snake":
+        enemy = enemy -130
+        print ("You have delt 130 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "fire cat": 
+        enemy = enemy -120
+        print ("You have delt 120 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "blood bat":
+        enemy = enemy -110
+        print ("You have delt 110 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "pixie":
+        if pixie <= 1:
+            print("sorry you are out of pixies and you have fizzled")
+        else:
+            character = character + 350
+            pixie = pixie - 2
+            print("You have healed yourself, your health =")
+            print character
+    elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+        enemy = enemy - 100
+        print ("You have delt 100 dam to the enemy. Enemy health =")
+        print enemy
+    else:
+        print("You mistyped and your spell fizzled")
+    time.sleep(4)
+    print("The rotting fodder is starting it's turn")
+    time.sleep(4)
+    print("The rotting fodder uses storm snake and deals 130 dam")
+    character = character -130
+    print("Your health =")
+    print character
+    time.sleep(3)
+    print("Your turn is starting")                                                                                              #turn 2 battle # 4
+    enemy = 450
+    time.sleep(2)
+    if wizard== "Fire" or wizard== "fire":
+        print("You have flame spark, and fire cat in your spell deck")
+    elif wizard== "Ice" or wizard== "ice":
+        print("You have ice shard, and frost beetle in your spell deck")
+    elif wizard== "Life" or wizard== "life":
+        print("You have life beam, and in your spell deck")
+    elif wizard== "Death" or wizard== "death":
+        print("You have death blast, and dark pixie")
+    elif wizard== "Myth" or wizard== "myth":
+        print("You have myth blast, and blood bat in your spell deck")
+    elif wizard== "Storm" or wizard== "storm":
+        print("You have lightning spark, and storm snake in your spell deck")
+    elif wizard== "Balance" or wizard== "balance":
+        print("You have balance beam, and scarab in your spell deck")
+    else:
+        print("Because you picked an invalid class you cannot continue the game, please reload the page")
+    time.sleep(4)
+    if pixie >= 1:
+        print("you have" + pixie / 2 + "pixies")
+    else:
+        print("You have already used your pixie and have fizzled")
+    spell= raw_input("Enter your spell (please use only lowercase):")
+    if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+        enemy = enemy - 60
+        print ("You have delt 60 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "storm snake":
+        enemy = enemy -130
+        print ("You have delt 130 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "fire cat": 
+        enemy = enemy -120
+        print ("You have delt 120 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "blood bat":
+        enemy = enemy -110
+        print ("You have delt 110 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "pixie":
+        if pixie <= 1:
+            print("sorry you are out of pixies and you have fizzled")
+        else:
+            character = character + 350
+            pixie = pixie - 2
+            print("You have healed yourself, your health =")
+            print character
+    elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+        enemy = enemy - 100
+        print ("You have delt 100 dam to the enemy. Enemy health =")
+        print enemy
+    else:
+        print("You mistyped and your spell fizzled")
+    time.sleep(4)
+    print("The rotting fodder is tarting it's turn")
+    time.sleep(4)
+    print("The rotting rodder uses lightning spark and deals 60 dam")
+    character = character - 60
+    print("Your health =")
+    print character
+    time.sleep(3)
+    print("Your turn is starting")                                  #turn 3 battle 4
+    time.sleep(2)
+    if wizard== "Fire" or wizard== "fire":
+        print("You have flame spark, fire cat, and fire elf in your spell deck")
+    elif wizard== "Ice" or wizard== "ice":
+        print("You have ice shard, frost beetle, and snow serpent in your spell deck")
+    elif wizard== "Life" or wizard== "life":
+        print("You have life beam, imp, and leprechaun in your spell deck")
+    elif wizard== "Death" or wizard== "death":
+        print("You have death blast, dark pixie, and ghoul your spell deck")
+    elif wizard== "Myth" or wizard== "myth":
+        print("You have myth blast, blood bat, and troll in your spell deck")
+    elif wizard== "Storm" or wizard== "storm":
+        print("You have lightning spark, storm snake, and lightning bat in your spell deck")
+    elif wizard== "Balance" or wizard== "balance":
+        print("You have balance beam, scarab, and scorpion in your spell deck")
+    else:
+        print("Because you picked an invalid class you cannot continue the game, please reload the page")
+    time.sleep(4)
+    if pixie >= 1:
+        print("you have" + pixie / 2 + "pixies")
+    else:
+        print("You have already used your pixie and have fizzled")
+    spell= raw_input("Enter your spell (please use only lowercase):")
+    if spell== "flame spark" or spell== "ice shard" or spell== "life beam" or spell== "death blast" or spell== "myth blast" or spell== "lightning spark" or spell== "balance beam":
+        enemy = enemy - 60
+        print ("You have delt 60 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "storm snake":
+        enemy = enemy -130
+        print ("You have delt 130 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "fire cat": 
+        enemy = enemy -120
+        print ("You have delt 120 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "blood bat":
+        enemy = enemy -110
+        print ("You have delt 110 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "fire elf":
+        enemy = enemy- 220
+        print("You have delt 220 dam to the enemy. Enemy helath =")
+        print enemy
+    elif spell== "pixie":
+        if pixie <= 1:
+            print("sorry you are out of pixies and you have fizzled")
+        else:
+            character = character + 350
+            pixie = pixie - 2
+            print("You have healed yourself, your health =")
+            print character
+    elif spell== ("lightning bat"):
+        enemy = enemy -240
+        print("You have delt 240 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== ("troll"):
+        enemy = enemy - 200
+        print("You have delt 200 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== ("ghoul"):
+        enemy = enemy -160
+        character = character + 80
+        print("You have delt 160 dam the enemy and restored 80 health to your self.")
+        time.sleep(4)
+        print("Enemy health = " + enemy)
+        time.sleep(2)
+        print("Your health = " + character)
+        time.sleep(2)
+    elif spell== ("snow serpent") or spell== ("leprachaun") or spell== ("scorpion"):
+        enemy = enemy -190
+        print("You have del 190 dam to the enemy. Enemy health =")
+        print enemy
+    elif spell== "frost beetle" or spell== "dark pixie" or spell== "imp" or spell== "scarab":
+        enemy = enemy - 100
+        print ("You have delt 100 dam to the enemy. Enemy health =")
+        print enemy
+    else:
+        print("You mistyped and your spell fizzled")
+    time.sleep(4)
