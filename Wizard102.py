@@ -4917,8 +4917,16 @@ while (done4):
                     if enemy <= 0:
                         print("You win!")
                         trophies = trophies + 1
-                        print("You no have " + trophies + "necklaces")
+                        print("You have " + trophies + "necklaces")
                         done= False
                         break
                     else:
-                        time.sleep(3)                    
+                        time.sleep(3)
+                        print("The rotting fodder it starting it's turn")
+                        time.sleep(4)
+                        print("The rotting fodder uses storm snake and deals 130 dam")
+                        character = character - 130
+                        print("Your health =")
+                        print character
+                        time.sleep(3)
+                        
