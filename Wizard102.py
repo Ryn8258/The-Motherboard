@@ -1320,7 +1320,7 @@ while (done2):
                                     time.sleep(3)
                                     if character <= 0:
                                         print("You have died! Please restart the game and try again")
-                                        Time.sleep(9999999999999)
+                                        time.sleep(9999999999999)
                                         done= False
                                         break
                                     else:
@@ -1544,7 +1544,7 @@ while (done3):
     time.sleep(3)
     shoptravel = raw_input("Would u like to travel to the shop(yes or no)")
     time.sleep(2)
-    if shoptravel== ("yes") or shop== ("y") or shop== ("Yes"):
+    if shoptravel== ("yes") or shoptravel== ("y") or shoptravel== ("Yes"):
         print("Traveling to shop...")
         time.sleep(3)
         print("Your money =")
@@ -1648,7 +1648,7 @@ while (done3):
             if money >= 100:
                 if chestplate== 100:
                     print("You already own this item, and will not get to purchase this time")
-                elif chesplate >= 100:
+                elif chestplate >= 100:
                     print("You own a better item, and will not get to purchase this time")
                 else:
                     character = character - chestplate
@@ -1663,7 +1663,7 @@ while (done3):
             if money >= 100:
                 if chestplate== 200:
                     print("You already own this item, and will not get to purchase this time")
-                elif chesplate >= 200:
+                elif chestplate >= 200:
                     print("You own a better item, and will not get to purchase this time")
                 else:
                     character = character - chestplate
@@ -1678,7 +1678,7 @@ while (done3):
             if money >= 300:
                 if chestplate== 300:
                     print("You already own this item, and will not get to purchase this time")
-                elif chesplate >= 300:
+                elif chestplate >= 300:
                     print("You own a better item, and will not get to purchase this time")
                 else:
                     character = character - chestplate
@@ -1693,7 +1693,7 @@ while (done3):
             if money >= 400:
                 if chestplate== 400:
                     print("You already own this item, and will not get to purchase this time")
-                elif chesplate >= 400:
+                elif chestplate >= 400:
                     print("You own a better item, and will not get to purchase this time")
                 else:
                     character = character - chestplate
@@ -1708,7 +1708,7 @@ while (done3):
             if money >= 500:
                 if chestplate== 500:
                     print("You already own this item, and will not get to purchase this time")
-                elif chesplate >= 500:
+                elif chestplate >= 500:
                     print("You own a better item, and will not get to purchase this time")
                 else:
                     character = character - chestplate
@@ -1723,7 +1723,7 @@ while (done3):
             if money >= 600:
                 if chestplate== 600:
                     print("You already own this item, and will not get to purchase this time")
-                elif chesplate >= 600:
+                elif chestplate >= 600:
                     print("You own a better item, and will not get to purchase this time")
                 else:
                     character = character - chestplate
@@ -1950,7 +1950,7 @@ while (done3):
     sun_bird= 2
     evil_snowman= 2
     seraph= 2
-    banshe= 2
+    banshee= 2
     cyclops= 2
     storm_shark= 2
     sandstorm= 2  
@@ -2368,7 +2368,7 @@ while (done3):
     elif wizard== "Life" or wizard== "life":
         print("You have life beam, imp, leprechaun and seraphin your spell deck")
     elif wizard== "Death" or wizard== "death":
-        print("You have death blast, dark pixie, ghou, and banshee in your spell deck")
+        print("You have death blast, dark pixie, ghoul, and banshee in your spell deck")
     elif wizard== "Myth" or wizard== "myth":
         print("You have myth blast, blood bat, troll, and cyclops in your spell deck")
     elif wizard== "Storm" or wizard== "storm":
@@ -3834,7 +3834,7 @@ while (done4):
                 if money >= 100:
                     if chestplate== 100:
                         print("You already own this item, and will not get to purchase this time")
-                    elif chesplate >= 100:
+                    elif chestplate >= 100:
                         print("You own a better item, and will not get to purchase this time")
                     else:
                         character = character - chestplate
@@ -3849,7 +3849,7 @@ while (done4):
                 if money >= 100:
                     if chestplate== 200:
                         print("You already own this item, and will not get to purchase this time")
-                    elif chesplate >= 200:
+                    elif chestplate >= 200:
                         print("You own a better item, and will not get to purchase this time")
                     else:
                         character = character - chestplate
@@ -3864,7 +3864,7 @@ while (done4):
                 if money >= 300:
                     if chestplate== 300:
                         print("You already own this item, and will not get to purchase this time")
-                    elif chesplate >= 300:
+                    elif chestplate >= 300:
                         print("You own a better item, and will not get to purchase this time")
                     else:
                         character = character - chestplate
@@ -3879,7 +3879,7 @@ while (done4):
                 if money >= 400:
                     if chestplate== 400:
                         print("You already own this item, and will not get to purchase this time")
-                    elif chesplate >= 400:
+                    elif chestplate >= 400:
                         print("You own a better item, and will not get to purchase this time")
                     else:
                         character = character - chestplate
@@ -3894,7 +3894,7 @@ while (done4):
                 if money >= 500:
                     if chestplate== 500:
                         print("You already own this item, and will not get to purchase this time")
-                    elif chesplate >= 500:
+                    elif chestplate >= 500:
                         print("You own a better item, and will not get to purchase this time")
                     else:
                         character = character - chestplate
@@ -3909,7 +3909,7 @@ while (done4):
                 if money >= 600:
                     if chestplate== 600:
                         print("You already own this item, and will not get to purchase this time")
-                    elif chesplate >= 600:
+                    elif chestplate >= 600:
                         print("You own a better item, and will not get to purchase this time")
                     else:
                         character = character - chestplate
@@ -4135,7 +4135,7 @@ while (done4):
     print("Once you've defeated three return to her with the necklaces. You will not get a chance to restore your health in between battles")
     time.sleep(4)
     print("You head down the alley.")
-    trophies = N/A
+    trophies = N_A
     time.sleep(2.5)
     print("These enemie seem to be undead, but they are also conjuring up magic of the storm")
     time.sleep(5)
